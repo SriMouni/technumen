@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Urbanist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
 </head>
-<body class="min-w-80 overflow-x-hidden bg-[#010300] font-['Urbanist',Inter,Arial,sans-serif] text-white [background:radial-gradient(circle_at_13%_6%,rgba(40,234,243,.24),transparent_25rem),radial-gradient(circle_at_78%_20%,rgba(188,255,165,.1),transparent_34rem),linear-gradient(176.85deg,#010300_58.86%,#313a2d_116.83%)]">
+<body class="home-page min-w-80 overflow-x-hidden bg-[#010300] font-['Urbanist',Inter,Arial,sans-serif] text-white [background:radial-gradient(circle_at_13%_6%,rgba(40,234,243,.24),transparent_25rem),radial-gradient(circle_at_78%_20%,rgba(188,255,165,.1),transparent_34rem),linear-gradient(176.85deg,#010300_58.86%,#313a2d_116.83%)]">
   <header data-header class="site-header fixed inset-x-0 top-16 z-50 mx-auto flex h-[92px] w-[min(1746px,calc(100%-174px))] items-center justify-between p-5 transition-all duration-300 max-[1500px]:w-[min(1746px,calc(100%-64px))] max-[960px]:top-6 max-[960px]:h-[54px] max-[960px]:w-[calc(100%-32px)]">
     <a class="site-logo" href="index.html" aria-label="Technumen home">
       <img src="images/technumen-logo.png" alt="Technumen" />
@@ -36,6 +36,7 @@
           <a href="guidewire.html" role="menuitem">Guidewire / Insurance</a>
         </div>
       </div>
+      <a class="p-2.5" href="about.html">About</a>
       <a class="p-2.5" href="careers.html">Careers</a>
       <a class="p-2.5" href="resources.html">Resources</a>
       <a class="inline-flex min-h-[39px] items-center justify-center rounded-[82px] bg-white px-4 py-0 text-base font-bold text-[#010300]" href="contact.html">Get in touch</a>
@@ -43,22 +44,22 @@
   </header>
 
   <main id="top">
-    <section class="relative mx-auto flex min-h-[clamp(920px,71vw,1365px)] w-[min(1744px,calc(100%-176px))] flex-col items-center overflow-hidden py-[137px_72px] text-center max-[1500px]:w-[min(1744px,calc(100%-64px))] max-[760px]:min-h-[790px] max-[760px]:w-[min(100%-28px,1744px)] max-[760px]:pt-24">
-      <div class="absolute top-[170px] h-[680px] w-[min(1260px,100%)] rounded-full opacity-100 blur-[94px] [background:radial-gradient(circle_at_18%_23%,rgba(40,234,243,.4),transparent_20rem),radial-gradient(circle_at_68%_37%,rgba(188,255,165,.18),transparent_25rem)]" aria-hidden="true"></div>
+    <section class="home-hero relative mx-auto flex min-h-[clamp(920px,71vw,1365px)] w-[min(1744px,calc(100%-176px))] flex-col items-center overflow-hidden py-[137px_72px] text-center max-[1500px]:w-[min(1744px,calc(100%-64px))] max-[760px]:min-h-[790px] max-[760px]:w-[min(100%-28px,1744px)] max-[760px]:pt-24">
+      <div class="hero-glow absolute top-[170px] h-[680px] w-[min(1260px,100%)] rounded-full opacity-100 blur-[94px] [background:radial-gradient(circle_at_18%_23%,rgba(40,234,243,.4),transparent_20rem),radial-gradient(circle_at_68%_37%,rgba(188,255,165,.18),transparent_25rem)]" aria-hidden="true"></div>
 
-      <div class="relative grid aspect-square w-[min(691px,88vw)] place-items-center max-[760px]:w-[min(360px,96vw)]">
+      <div class="hero-orbit relative grid aspect-square w-[min(691px,88vw)] place-items-center max-[760px]:w-[min(360px,96vw)]">
         <video class="relative z-[2] h-[46%] w-[46%] rounded-full object-cover mix-blend-screen drop-shadow-[0_0_30px_rgba(40,234,243,.42)]" src="images/Connect final.mp4" autoplay muted loop playsinline preload="auto" aria-label="Technumen connected intelligence animation"></video>
         <div class="absolute inset-0 rounded-full border border-white/[.095]"></div>
         <div class="absolute inset-[9.3%] rounded-full border border-white/[.095]"></div>
         <div class="absolute inset-[19.3%] rounded-full border border-white/[.095]"></div>
-        <span class="hero-badge hero-badge--ai"><span class="hero-badge-icon"><svg class="h-5 w-5 max-[760px]:h-3 max-[760px]:w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v3" /><path d="M12 19v3" /><path d="M2 12h3" /><path d="M19 12h3" /><rect x="7" y="7" width="10" height="10" rx="2" /><path d="M10 12h4" /><path d="M12 10v4" /></svg></span>AI Systems</span>
-        <span class="hero-badge hero-badge--data"><span class="hero-badge-icon"><svg class="h-5 w-5 max-[760px]:h-3 max-[760px]:w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3" /><path d="M4 12h5" /><path d="M15 12h5" /><path d="M12 4v5" /><path d="M12 15v5" /></svg></span>Data Intelligence</span>
-        <span class="hero-badge hero-badge--digital"><span class="hero-badge-icon"><svg class="h-5 w-5 max-[760px]:h-3 max-[760px]:w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2" /><path d="M8 8h3v3H8z" /><path d="M13 8h3v3h-3z" /><path d="M8 13h3v3H8z" /><path d="M13 13h3v3h-3z" /></svg></span>Digital Engineering</span>
-        <span class="hero-badge hero-badge--automation"><span class="hero-badge-icon"><svg class="h-5 w-5 max-[760px]:h-3 max-[760px]:w-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h8" /><path d="M8 18h8" /><path d="M12 6v12" /><path d="m8 10-4 2 4 2" /><path d="m16 10 4 2-4 2" /></svg></span>Automation</span>
+        <span class="hero-badge hero-badge--ai"><span class="hero-badge-icon"><img src="images/AI.png" alt="" aria-hidden="true" /></span>AI Systems</span>
+        <span class="hero-badge hero-badge--data"><span class="hero-badge-icon"><img src="images/DB.png" alt="" aria-hidden="true" /></span>Data Intelligence</span>
+        <span class="hero-badge hero-badge--digital"><span class="hero-badge-icon"><img src="images/DigitalEngineering.png" alt="" aria-hidden="true" /></span>Digital Engineering</span>
+        <span class="hero-badge hero-badge--automation"><span class="hero-badge-icon"><img src="images/Automation.png" alt="" aria-hidden="true" /></span>Automation</span>
       </div>
 
-      <div class="relative z-[4] mt-[58px] max-w-[1465px]">
-        <h1 class="m-0 mb-6 text-[clamp(48px,4.17vw,80px)] font-normal leading-[1.2] max-[760px]:text-[clamp(36px,12vw,54px)] max-[760px]:leading-[1.04]">Build Scalable, Intelligent Digital Systems</h1>
+      <div class="hero-copy relative z-[4] mt-[58px] max-w-[1465px]">
+        <h1 class="m-0 mb-6 text-[clamp(48px,4.17vw,80px)] font-normal leading-[1.2] max-[760px]:text-[70px] max-[760px]:leading-[1.04]">Build Scalable, Intelligent Digital Systems</h1>
         <p class="text-lg leading-[1.22] text-[#c2c2c2]">We combine AI, Data, and Engineering to modernize platforms, automate workflows, and deliver measurable business outcomes.</p>
         <div class="mt-[50px] flex justify-center gap-4 max-[760px]:mt-8 max-[760px]:flex-col max-[760px]:items-center">
           <a class="inline-flex min-h-[54px] items-center justify-center rounded-[50px] bg-white px-8 text-lg font-semibold text-[#0d0d10]" href="contact.html">Start a Project</a>
@@ -66,7 +67,7 @@
         </div>
       </div>
 
-      <div class="relative z-[4] mt-24 w-full">
+      <div class="hero-trust relative z-[4] mt-24 w-full">
         <p class="section-kicker">Trusted By 100+ Customers</p>     
         <div class="client-logos" aria-label="Technumen clients">
           <img class="client-logo" src="images/c1.png" alt="Nationwide" />
@@ -82,11 +83,12 @@
       </div>
     </section>
 
-    <section class="grid w-full grid-cols-4 gap-4 border-y border-white/10 bg-[#0a1010] px-[max(24px,calc((100vw-1208px)/2))] py-[55px] text-center max-[960px]:grid-cols-2 max-[760px]:grid-cols-1 max-[760px]:gap-7 max-[760px]:px-6 max-[760px]:py-11">
+    <section class="home-stats grid w-full grid-cols-4 gap-4 border-y border-white/10 bg-[#0a1010] px-[max(24px,calc((100vw-1208px)/2))] py-[55px] text-center max-[960px]:grid-cols-2 max-[760px]:grid-cols-1 max-[760px]:gap-7 max-[760px]:px-6 max-[760px]:py-11">
       <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">$11M+</strong><span class="font-['Inter'] text-base text-[#c2c2c2]">Enterprise clients served</span></div>
       <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">79.14%</strong><span class="font-['Inter'] text-base text-[#c2c2c2]">Years of deep domain expertise</span></div>
       <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">$299/y</strong><span class="font-['Inter'] text-base text-[#c2c2c2]">Client retention rate</span></div>
       <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">34k+</strong><span class="font-['Inter'] text-base text-[#c2c2c2]">Countries of active presence</span></div>
+      <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">120+</strong><span class="font-['Inter'] text-base text-[#c2c2c2]">Projects completed successfully</span></div>
     </section>
 
     <section id="pillars" class="bg-[#0a1010]">
@@ -99,52 +101,19 @@
       <div class="grid grid-cols-3 gap-5 max-[960px]:grid-cols-2 max-[760px]:grid-cols-1">
         <article>
           <div class="pillar-visual pillar-visual--ai" aria-hidden="true">
-            <span class="ai-halo"></span>
-            <svg class="ai-network" viewBox="0 0 360 240" fill="none" aria-hidden="true">
-              <path class="ai-path ai-path--one" d="M70 120 C112 72 152 72 180 120 C208 168 248 168 290 120" />
-              <path class="ai-path ai-path--two" d="M92 62 C142 112 218 112 268 62" />
-              <path class="ai-path ai-path--three" d="M92 178 C142 128 218 128 268 178" />
-              <circle class="ai-network-node" cx="70" cy="120" r="6" />
-              <circle class="ai-network-node" cx="92" cy="62" r="5" />
-              <circle class="ai-network-node" cx="92" cy="178" r="5" />
-              <circle class="ai-network-node" cx="180" cy="120" r="7" />
-              <circle class="ai-network-node" cx="268" cy="62" r="5" />
-              <circle class="ai-network-node" cx="268" cy="178" r="5" />
-              <circle class="ai-network-node" cx="290" cy="120" r="6" />
-            </svg>
-            <span class="ai-chip">
-              <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
-                <rect x="14" y="14" width="20" height="20" rx="5" />
-                <path d="M19 24h10M24 19v10M10 18h4M10 30h4M34 18h4M34 30h4M18 10v4M30 10v4M18 34v4M30 34v4" />
-              </svg>
-            </span>
+            <img src="images/Frame 128.png" alt="" />
           </div>
           <p class="section-kicker">AI</p><h3 class="my-1 text-2xl font-semibold leading-[1.2] text-[#e4e4e4]">Intelligence &amp; thinking</h3><p class="m-0 text-base leading-[1.2] text-[#c2c2c2]">We design and deploy AI solutions that reason, adapt, and improve, from machine learning pipelines to large language model integrations built for enterprise scale.</p>
         </article>
         <article>
           <div class="pillar-visual pillar-visual--data" aria-hidden="true">
-            <span class="data-wave data-wave--one"></span>
-            <span class="data-wave data-wave--two"></span>
-            <span class="data-wave data-wave--three"></span>
-            <span class="data-glow"></span>
-            <span class="data-packet data-packet--one"></span>
-            <span class="data-packet data-packet--two"></span>
-            <span class="data-packet data-packet--three"></span>
-            <span class="data-insight-line"></span>
+            <img src="images/Frame 127.png" alt="" />
           </div>
           <p class="section-kicker">Data</p><h3 class="my-1 text-2xl font-semibold leading-[1.2] text-[#e4e4e4]">Data &amp; enablement</h3><p class="m-0 text-base leading-[1.2] text-[#c2c2c2]">Modern data platforms, real-time analytics, and governance frameworks that turn raw data into strategic assets your business can act on with confidence.</p>
         </article>
         <article>
           <div class="pillar-visual pillar-visual--digital" aria-hidden="true">
-            <span class="platform-rail platform-rail--one"></span>
-            <span class="platform-rail platform-rail--two"></span>
-            <span class="platform-card platform-card--one"></span>
-            <span class="platform-card platform-card--two"></span>
-            <span class="platform-card platform-card--three"></span>
-            <span class="platform-light"></span>
-            <span class="platform-node platform-node--one"></span>
-            <span class="platform-node platform-node--two"></span>
-            <span class="platform-node platform-node--three"></span>
+            <img src="images/Frame 126.png" alt="" />
           </div>
           <p class="section-kicker">Digital</p><h3 class="my-1 text-2xl font-semibold leading-[1.2] text-[#e4e4e4]">Digital &amp; execution</h3><p class="m-0 text-base leading-[1.2] text-[#c2c2c2]">Cloud-native development, DevSecOps, and platform engineering that deliver outcomes at velocity with the reliability and security enterprises demand.</p>
         </article>
@@ -163,10 +132,10 @@
         <button class="h-10 w-10 rounded-full border border-[#c2c2c2] bg-transparent text-[28px] leading-none text-[#c2c2c2]" type="button" data-scroll-services="1" aria-label="Scroll services right">&rsaquo;</button>
       </div>
       <div data-service-row class="service-row">
-        <article class="service-card"><div class="service-card-media"><img class="service-card-image service-card-image--ai" src="images/service-ai.png" alt="AI and machine learning visual" /></div><h3 class="service-card-title">AI &amp; Machine Learning</h3><p class="service-card-body">Generative AI, predictive analytics, MLOps infrastructure, and AI strategy consulting tailored to your industry vertical.</p></article>
-        <article class="service-card"><div class="service-card-media"><img class="service-card-image service-card-image--cloud" src="images/service-data.png" alt="Cloud and platform engineering visual" /></div><h3 class="service-card-title">Cloud &amp; Platform Engineering</h3><p class="service-card-body">Multi-cloud migration, Kubernetes orchestration, and SRE practices that deliver resilient, scalable infrastructure.</p></article>
-        <article class="service-card"><div class="service-card-media"><img class="service-card-image service-card-image--security" src="images/service-platform.png" alt="Cybersecurity and compliance visual" /></div><h3 class="service-card-title">Cybersecurity &amp; Compliance</h3><p class="service-card-body">Zero-trust architecture, threat modeling, and continuous compliance monitoring across regulated industries.</p></article>
-        <article class="service-card"><div class="service-card-media"><img class="service-card-image service-card-image--data" src="images/service-security.png" alt="Data engineering and analytics visual" /></div><h3 class="service-card-title">Data Engineering &amp; Analytics</h3><p class="service-card-body">Modern data mesh, lakehouse architectures, and self-service analytics platforms at enterprise scale.</p></article>
+        <article class="service-card"><div class="service-card-media"><img class="service-card-image service-card-image--ai" src="images/image 24 1.png" alt="AI and machine learning visual" /></div><h3 class="service-card-title">AI &amp; Machine Learning</h3><p class="service-card-body">Generative AI, predictive analytics, MLOps infrastructure, and AI strategy consulting tailored to your industry vertical.</p></article>
+        <article class="service-card"><div class="service-card-media"><img class="service-card-image service-card-image--cloud" src="images/image 24 2.png" alt="Cloud and platform engineering visual" /></div><h3 class="service-card-title">Cloud &amp; Platform Engineering</h3><p class="service-card-body">Multi-cloud migration, Kubernetes orchestration, and SRE practices that deliver resilient, scalable infrastructure.</p></article>
+        <article class="service-card"><div class="service-card-media"><img class="service-card-image service-card-image--security" src="images/image 24 3.png" alt="Cybersecurity and compliance visual" /></div><h3 class="service-card-title">Cybersecurity &amp; Compliance</h3><p class="service-card-body">Zero-trust architecture, threat modeling, and continuous compliance monitoring across regulated industries.</p></article>
+        <article class="service-card"><div class="service-card-media"><img class="service-card-image service-card-image--data" src="images/image 24 4.png" alt="Data engineering and analytics visual" /></div><h3 class="service-card-title">Data Engineering &amp; Analytics</h3><p class="service-card-body">Modern data mesh, lakehouse architectures, and self-service analytics platforms at enterprise scale.</p></article>
       </div>
       <div class="mt-12 flex justify-center gap-[9px]"><span class="h-2.5 w-2.5 rounded-full bg-[#d9d9d9]"></span><span class="h-2.5 w-2.5 rounded-full bg-[#484848]"></span><span class="h-2.5 w-2.5 rounded-full bg-[#484848]"></span></div>
     </section>
@@ -253,27 +222,16 @@
     </section>
   </main>
 
-  <footer class="mx-auto flex w-[min(1744px,calc(100%-176px))] flex-col gap-9 px-10 pb-[17px] pt-[132px] max-[1500px]:w-[min(1744px,calc(100%-64px))] max-[960px]:px-0 max-[760px]:w-[min(100%-28px,1744px)] max-[760px]:pt-[92px]">
-    <div class="grid min-h-[243px] grid-cols-[minmax(420px,1004px)_minmax(420px,607px)] items-start gap-12 max-[1180px]:grid-cols-1 max-[1180px]:gap-14">
-      <div class="flex min-h-[233px] flex-col items-start justify-center gap-8">
-        <a class="footer-logo" href="index.html" aria-label="Technumen home"><img src="images/technumen-logo.png" alt="Technumen" /></a>
-        <p class="m-0 max-w-[468px] font-['Inter'] text-xs leading-[15px] tracking-[-.01px] text-white/50">AI-first digital engineering for the world's most ambitious enterprises. Building the future, one transformation at a time.</p>
-        <div class="flex h-14 items-center gap-6 max-[760px]:h-auto max-[760px]:flex-wrap">
-          <img class="h-14 w-10 object-contain" src="images/badge-cmmi.png" alt="SOC 2 Type 2 certification" />
-          <img class="h-[37px] w-[100px] rounded-sm bg-white object-contain" src="images/badge-soc2.png" alt="CMMI appraised certification" />
-          <img class="h-[37px] w-[100px] rounded-sm bg-white object-contain" src="images/badge-iso.jpg" alt="ISO/IEC 27001:2022 certification" />
-        </div>
-        <small class="font-['Inter'] text-xs leading-[15px] tracking-[-.01px] text-white/50">&copy; 2026 Technumen Inc. All rights reserved.</small>
-      </div>
-      <div class="grid max-w-[607px] grid-cols-[136px_95px_132px] justify-between gap-[122px] justify-self-end max-[1180px]:justify-self-start max-[760px]:grid-cols-1 max-[760px]:gap-10">
-        <div><h3 class="m-0 mb-8 text-sm font-normal leading-[17px] tracking-[-.09px] text-white/50">Services</h3><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="service-digital-engineering.html">Digital Applications</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="service-cloud.html">Cloud Transformation</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="service-data.html">Advanced Analytics</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="service-security.html">Cyber Security</a></div>
-        <div><h3 class="m-0 mb-8 text-sm font-normal leading-[17px] tracking-[-.09px] text-white/50">Company</h3><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="about.html">About us</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="careers.html">Careers</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="resources.html">Resources</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="contact.html">Contact</a></div>
-        <div><h3 class="m-0 mb-8 text-sm font-normal leading-[17px] tracking-[-.09px] text-white/50">Contact</h3><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="mailto:info@technumen.com">info@technumen.com</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="tel:+17325950962">732-595-0962</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="contact.html">Locations</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="resources.html">Privacy policy</a></div>
-      </div>
-    </div>
-    <!-- <div class="grid h-[182px] place-items-center overflow-hidden max-[760px]:h-24">
-      <span class="font-['Inter'] text-[clamp(64px,10.4vw,182px)] font-extrabold uppercase leading-none tracking-[.08em] text-[#373d34]">Technumen</span>
-    </div> -->
+  <footer class="site-footer mx-auto flex w-[min(1744px,calc(100%-176px))] flex-col gap-9 px-10 pb-[17px] pt-[132px] max-[1500px]:w-[min(1744px,calc(100%-64px))] max-[960px]:px-0 max-[760px]:w-[min(100%-28px,1744px)] max-[760px]:pt-[92px]">
+    <a class="site-footer-logo" href="index.html" aria-label="Technumen home">
+      <img src="images/technumen-logo.png" alt="Technumen" />
+    </a>
+    <nav class="site-footer-links" aria-label="Footer links">
+      <a href="resources.html">Terms of Service</a>
+      <a href="resources.html">Privacy Policy</a>
+      <a href="resources.html">Cookies</a>
+    </nav>
+    <small>&copy; 2026 Technumen Inc. All rights reserved.</small>
   </footer>
 
   <script type="module" src="/script.js"></script>
