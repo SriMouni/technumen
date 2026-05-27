@@ -3204,43 +3204,113 @@
 
 @media (max-width: 760px) {
   .home-page .home-hero {
+    display: grid;
     min-height: auto;
-    padding: 104px 0 48px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 36px;
+    overflow: hidden;
+    padding: 128px 0 44px;
+    text-align: center;
   }
 
   .home-page .hero-glow {
-    top: 120px;
-    height: 420px;
+    top: 110px;
+    left: 50%;
     width: 100%;
+    height: 460px;
     filter: blur(70px);
+    transform: translateX(-50%);
   }
 
   .home-page .hero-orbit {
-    width: min(310px, 92vw);
+    grid-column: 1;
+    grid-row: 2;
+    width: min(330px, 96%);
+    margin: 0 auto;
+    justify-self: center;
   }
 
   .home-page .hero-copy {
-    margin-top: 34px;
+    grid-column: 1;
+    grid-row: 1;
+    width: min(338px, 100%);
+    margin: 0 auto;
+    justify-self: center;
+    text-align: center;
   }
 
   .home-page .hero-copy h1 {
-    font-size: clamp(38px, 12vw, 46px);
+    max-width: 338px;
+    margin: 0 auto 18px;
+    font-size: clamp(37px, 11.4vw, 44px);
     line-height: 1.06;
   }
 
   .home-page .hero-copy p {
+    max-width: 318px;
+    margin: 0 auto;
     font-size: 15px;
     line-height: 1.45;
   }
 
+  .home-page .hero-copy > div {
+    display: grid;
+    width: min(280px, 100%);
+    margin: 34px auto 0;
+    gap: 16px;
+  }
+
   .home-page .hero-copy a {
     min-height: 48px;
-    width: min(280px, 100%);
+    width: 100%;
     font-size: 15px;
   }
 
+  .home-page .hero-badge {
+    max-width: 132px;
+    min-height: 34px;
+    gap: 6px;
+    padding: 6px 9px 6px 6px;
+    overflow: hidden;
+    font-size: 10px;
+    line-height: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .home-page .hero-badge-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .home-page .hero-badge--ai {
+    top: 13%;
+    right: 10%;
+  }
+
+  .home-page .hero-badge--data {
+    top: 40%;
+    left: 2%;
+  }
+
+  .home-page .hero-badge--digital {
+    top: 48%;
+    right: 0;
+    left: auto;
+  }
+
+  .home-page .hero-badge--automation {
+    bottom: 13%;
+    left: 34%;
+  }
+
   .home-page .hero-trust {
-    margin-top: 54px;
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    margin: 36px auto 0;
+    padding-bottom: 0;
   }
 
   .home-page .hero-trust .client-logos {
