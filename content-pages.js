@@ -347,6 +347,26 @@ const motionTheme = motionThemes[pageName];
 
 document.title = `${page.eyebrow} | Technumen`;
 
+const view = {
+  pageHero: "page-hero relative overflow-hidden pt-[220px] pb-[104px] before:pointer-events-none before:absolute before:inset-[70px_0_auto_12%] before:h-[420px] before:w-[min(760px,70vw)] before:rounded-full before:bg-[radial-gradient(circle_at_32%_44%,rgba(40,234,243,.24),transparent_62%)] before:opacity-80 before:blur-[32px] before:content-[''] max-[760px]:pt-[132px] max-[760px]:pb-16",
+  pageContainer: "page-container relative z-[2] mx-auto w-[min(1320px,calc(100%-176px))] max-[960px]:w-[min(100%-64px,1320px)] max-[760px]:w-[min(100%-28px,1320px)]",
+  heroTitle: "m-[18px_0_22px] w-[min(980px,100%)] font-['Urbanist',Inter,Arial,sans-serif] text-[50px] font-medium leading-[1.08] tracking-[-.09px] text-white",
+  heroIntro: "m-[0_0_34px] w-[min(780px,100%)] font-['Urbanist',Inter,Arial,sans-serif] text-[15px] leading-[1.5] text-[#c2c2c2] max-[760px]:text-base",
+  pageButton: "page-button inline-flex min-h-[54px] items-center justify-center rounded-[50px] bg-white px-8 font-['Urbanist',Inter,Arial,sans-serif] text-lg font-semibold text-[#0d0d10] no-underline",
+  contentSection: "content-section relative overflow-hidden border-t border-white/10 py-[78px] max-[760px]:py-[54px]",
+  contentGrid: "content-grid mt-12 grid grid-cols-3 gap-5 max-[960px]:grid-cols-2 max-[760px]:grid-cols-1",
+  contentCard: "content-card content-card--motion relative min-h-[220px] overflow-hidden rounded-lg border border-[rgba(255,255,255,.12)] bg-[linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015))] p-7",
+  contentTitle: "m-[0_0_12px] font-['Urbanist',Inter,Arial,sans-serif] text-[21px] font-semibold leading-[1.2] text-[#e4e4e4]",
+  contentBody: "m-0 font-['Inter',Arial,sans-serif] text-sm font-light leading-[1.5] text-[#c2c2c2]",
+  contentLink: "content-link mt-[18px] inline-flex text-sm font-semibold text-[#bcffa5] no-underline",
+  pageStats: "page-stats mt-12 grid grid-cols-4 gap-4 max-[760px]:grid-cols-1",
+  statCard: "rounded-lg border border-white/10 bg-white/[.035] p-6",
+  statNumber: "block text-[38px] font-normal leading-none text-[#28eaf3]",
+  statLabel: "mt-3 block font-['Inter',Arial,sans-serif] text-xs text-[#c2c2c2]",
+  pageCta: "page-cta pt-9",
+  footerLink: "mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white"
+};
+
 const serviceMotionVisuals = {
   services: `
     <span class="motion-grid"></span>
@@ -433,54 +453,54 @@ const serviceMotionMarkup = motionTheme ? `
 ` : "";
 
 const cardMarkup = (cards = []) => cards.map(([title, body, href], index) => `
-  <article class="content-card content-card--motion" style="--motion-order:${index}">
+  <article class="${view.contentCard}" style="--motion-order:${index}">
     <span class="content-card-sheen" aria-hidden="true"></span>
-    <h3>${title}</h3>
-    <p>${body}</p>
-    ${href ? `<a class="content-link" href="${href}">Explore</a>` : ""}
+    <h3 class="${view.contentTitle}">${title}</h3>
+    <p class="${view.contentBody}">${body}</p>
+    ${href ? `<a class="${view.contentLink}" href="${href}">Explore</a>` : ""}
   </article>
 `).join("");
 
 const statsMarkup = (stats = []) => stats.length ? `
-  <div class="page-stats">
-    ${stats.map(([num, label]) => `<div><strong>${num}</strong><span>${label}</span></div>`).join("")}
+  <div class="${view.pageStats}">
+    ${stats.map(([num, label]) => `<div class="${view.statCard}"><strong class="${view.statNumber}">${num}</strong><span class="${view.statLabel}">${label}</span></div>`).join("")}
   </div>
 ` : "";
 
 document.querySelector("[data-page-root]").innerHTML = `
-  <section class="page-hero">
+  <section class="${view.pageHero}">
     ${serviceMotionMarkup}
-    <div class="page-container">
+    <div class="${view.pageContainer}">
       <p class="section-kicker">${page.eyebrow}</p>
-      <h1>${page.title}</h1>
-      <p>${page.intro}</p>
-      <a class="page-button" href="${pageName === "careers.html" ? "mailto:jobs@technumen.com" : pageName === "contact.html" ? "mailto:info@technumen.com" : "contact.html"}">${page.cta?.[2] || "Contact Us"}</a>
+      <h1 class="${view.heroTitle}">${page.title}</h1>
+      <p class="${view.heroIntro}">${page.intro}</p>
+      <a class="${view.pageButton}" href="${pageName === "careers.html" ? "mailto:jobs@technumen.com" : pageName === "contact.html" ? "mailto:info@technumen.com" : "contact.html"}">${page.cta?.[2] || "Contact Us"}</a>
     </div>
   </section>
   ${page.sections.map((section, sectionIndex) => `
-    <section class="content-section ${motionTheme ? "content-section--motion" : ""}" style="--section-order:${sectionIndex}">
-      <div class="page-container">
+    <section class="${view.contentSection} ${motionTheme ? "content-section--motion" : ""}" style="--section-order:${sectionIndex}">
+      <div class="${view.pageContainer}">
         <div class="section-copy">
           <p class="section-kicker">${section.label}</p>
           <h2 class="section-title">${section.title}</h2>
           ${section.body ? `<p class="section-body">${section.body}</p>` : ""}
         </div>
         ${statsMarkup(section.stats)}
-        ${section.cards ? `<div class="content-grid">${cardMarkup(section.cards)}</div>` : ""}
+        ${section.cards ? `<div class="${view.contentGrid}">${cardMarkup(section.cards)}</div>` : ""}
       </div>
     </section>
   `).join("")}
-  <section class="page-cta">
-    <div class="page-container">
+  <section class="${view.pageCta}">
+    <div class="${view.pageContainer}">
       <div class="cta-panel">
         <h2 class="cta-title">${page.cta?.[0] || "Ready to transform?"}</h2>
         <p class="cta-copy">${page.cta?.[1] || "Partner with Technumen to accelerate your next step."}</p>
-        <a class="page-button page-button--light" href="${pageName === "careers.html" ? "mailto:jobs@technumen.com" : "contact.html"}">${page.cta?.[2] || "Contact Us"}</a>
+        <a class="${view.pageButton} page-button--light" href="${pageName === "careers.html" ? "mailto:jobs@technumen.com" : "contact.html"}">${page.cta?.[2] || "Contact Us"}</a>
       </div>
     </div>
   </section>
 `;
 
 document.querySelectorAll("[data-services-list]").forEach(el => {
-  el.innerHTML = services.map(([label, href]) => `<a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="${href}">${label}</a>`).join("");
+  el.innerHTML = services.map(([label, href]) => `<a class="${view.footerLink}" href="${href}">${label}</a>`).join("");
 });
