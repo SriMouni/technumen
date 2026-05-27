@@ -3268,14 +3268,13 @@
   }
 
   .home-page .hero-badge {
-    max-width: 132px;
+    max-width: none;
     min-height: 34px;
     gap: 6px;
     padding: 6px 9px 6px 6px;
-    overflow: hidden;
+    overflow: visible;
     font-size: 10px;
     line-height: 1;
-    text-overflow: ellipsis;
     white-space: nowrap;
   }
 
@@ -3291,7 +3290,7 @@
 
   .home-page .hero-badge--data {
     top: 40%;
-    left: 2%;
+    left: 0;
   }
 
   .home-page .hero-badge--digital {
