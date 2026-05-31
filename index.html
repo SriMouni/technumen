@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Urbanist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=6" />
+  <link rel="stylesheet" href="styles.css?v=11" />
 </head>
 <body class="site-page home-page min-w-80 overflow-x-hidden bg-[#010300] font-['Urbanist',Inter,Arial,sans-serif] text-white [background:radial-gradient(circle_at_13%_6%,rgba(40,234,243,.24),transparent_25rem),radial-gradient(circle_at_78%_20%,rgba(188,255,165,.1),transparent_34rem),linear-gradient(176.85deg,#010300_58.86%,#313a2d_116.83%)]">
   <header data-header class="site-header fixed inset-x-0 top-16 z-50 mx-auto flex h-[92px] w-[min(1746px,calc(100%-174px))] items-center justify-between p-5 transition-all duration-300 max-[1500px]:w-[min(1746px,calc(100%-64px))] max-[960px]:top-6 max-[960px]:h-[54px] max-[960px]:w-[calc(100%-32px)]">
@@ -70,15 +70,13 @@
       <div class="hero-trust relative z-[4] mt-24 w-full">
         <p class="section-kicker">Trusted By 100+ Customers</p>     
         <div class="client-logos" aria-label="Technumen clients">
-          <img class="client-logo" src="images/c1.png" alt="Nationwide" />
-          <img class="client-logo" src="images/c2.png" alt="PayPal" />
-          <img class="client-logo" src="images/c3.png" alt="Equifax" />
-          <img class="client-logo" src="images/c4.png" alt="Humana" />
-          <img class="client-logo" src="images/c5.png" alt="American Airlines" />
-          <img class="client-logo" src="images/c6.png" alt="3M" />
-          <img class="client-logo" src="images/c7.png" alt="BeautiControl" />
-          <img class="client-logo" src="images/c8.png" alt="Quicken Loans" />
-          <img class="client-logo" src="images/c9.png" alt="State Auto" />
+          <span class="client-logo-text">BlackRock.</span>
+          <span class="client-logo-text">Revolut</span>
+          <span class="client-logo-text client-logo-text--serif">JPMorganChase</span>
+          <span class="client-logo-text">Parmenion</span>
+          <span class="client-logo-text">7WISE</span>
+          <span class="client-logo-text client-logo-text--serif">JPMorganChase</span>
+          <span class="client-logo-text">Revolut</span>
         </div>
       </div>
     </section>
@@ -222,24 +220,14 @@
     </section>
   </main>
 
-  <footer class="mx-auto flex w-[min(1744px,calc(100%-176px))] flex-col gap-9 px-10 pb-[17px] pt-[132px] max-[1500px]:w-[min(1744px,calc(100%-64px))] max-[960px]:px-0 max-[760px]:w-[min(100%-28px,1744px)] max-[760px]:pt-[92px]">
-    <div class="grid min-h-[243px] grid-cols-[minmax(420px,1004px)_minmax(420px,607px)] items-start gap-12 max-[1180px]:grid-cols-1 max-[1180px]:gap-14">
-      <div class="flex min-h-[233px] flex-col items-start justify-center gap-8">
-        <a class="footer-logo" href="index.html" aria-label="Technumen home"><img src="images/technumen-logo.png" alt="Technumen" /></a>
-        <p class="m-0 max-w-[468px] font-['Inter'] text-xs leading-[15px] tracking-[-.01px] text-white/50">AI-first digital engineering for the world's most ambitious enterprises. Building the future, one transformation at a time.</p>
-        <div class="flex h-14 items-center gap-6 max-[760px]:h-auto max-[760px]:flex-wrap">
-          <img class="h-14 w-10 object-contain" src="images/badge-cmmi.png" alt="SOC 2 Type 2 certification" />
-          <img class="h-[37px] w-[100px] rounded-sm bg-white object-contain" src="images/badge-soc2.png" alt="CMMI appraised certification" />
-          <img class="h-[37px] w-[100px] rounded-sm bg-white object-contain" src="images/badge-iso.jpg" alt="ISO/IEC 27001:2022 certification" />
-        </div>
-        <small class="font-['Inter'] text-xs leading-[15px] tracking-[-.01px] text-white/50">&copy; 2026 Technumen Inc. All rights reserved.</small>
-      </div>
-      <div class="grid max-w-[607px] grid-cols-[136px_95px_132px] justify-between gap-[122px] justify-self-end max-[1180px]:justify-self-start max-[760px]:grid-cols-1 max-[760px]:gap-10">
-        <div><h3 class="m-0 mb-8 text-sm font-normal leading-[17px] tracking-[-.09px] text-white/50">Services</h3><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="service-digital-engineering.html">Digital Applications</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="service-cloud.html">Cloud Transformation</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="service-data.html">Advanced Analytics</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="service-security.html">Cyber Security</a></div>
-        <div><h3 class="m-0 mb-8 text-sm font-normal leading-[17px] tracking-[-.09px] text-white/50">Company</h3><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="about.html">About us</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="careers.html">Careers</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="resources.html">Resources</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="contact.html">Contact</a></div>
-        <div><h3 class="m-0 mb-8 text-sm font-normal leading-[17px] tracking-[-.09px] text-white/50">Contact</h3><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="mailto:info@technumen.com">info@technumen.com</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="tel:+17325950962">732-595-0962</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="contact.html">Locations</a><a class="mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white" href="resources.html">Privacy policy</a></div>
-      </div>
-    </div>
+  <footer class="site-footer">
+    <a class="site-footer-logo" href="index.html" aria-label="Technumen home"><img src="images/technumen-logo.png" alt="Technumen" /></a>
+    <nav class="site-footer-links" aria-label="Footer">
+      <a href="resources.html">Terms of Service</a>
+      <a href="resources.html">Privacy Policy</a>
+      <a href="resources.html">Cookies</a>
+    </nav>
+    <small>&copy; 2026 Technumen Inc. All rights reserved.</small>
   </footer>
 
   <script type="module" src="script.js"></script>
