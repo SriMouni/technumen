@@ -9,84 +9,92 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Urbanist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=11" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body class="site-page home-page min-w-80 overflow-x-hidden bg-[#010300] font-['Urbanist',Inter,Arial,sans-serif] text-white [background:radial-gradient(circle_at_13%_6%,rgba(40,234,243,.24),transparent_25rem),radial-gradient(circle_at_78%_20%,rgba(188,255,165,.1),transparent_34rem),linear-gradient(176.85deg,#010300_58.86%,#313a2d_116.83%)]">
-  <header data-header class="site-header fixed inset-x-0 top-16 z-50 mx-auto flex h-[92px] w-[min(1746px,calc(100%-174px))] items-center justify-between p-5 transition-all duration-300 max-[1500px]:w-[min(1746px,calc(100%-64px))] max-[960px]:top-6 max-[960px]:h-[54px] max-[960px]:w-[calc(100%-32px)]">
-    <a class="site-logo" href="index.html" aria-label="Technumen home">
-      <img src="images/technumen-logo.png" alt="Technumen" />
+  <header data-header class="fixed inset-x-0 top-6 z-50 mx-auto flex h-[68px] w-[min(1744px,calc(100%-120px))] items-center justify-between rounded-full border border-white/10 bg-[rgba(2,10,7,.5)] px-6 backdrop-blur-xl transition-all duration-300 [&.is-scrolled]:border-white/[.14] [&.is-scrolled]:bg-[rgba(2,10,7,.85)] max-[1180px]:w-[calc(100%-48px)] max-[960px]:top-4 max-[960px]:h-[58px] max-[960px]:px-4">
+    <a class="relative z-10 flex items-center" href="index.html" aria-label="Technumen home">
+      <img class="h-7 w-auto max-[960px]:h-6" src="images/technumen-logo.png" alt="Technumen" />
     </a>
-    <button class="relative z-[60] hidden h-[42px] w-[42px] rounded-full border border-white/20 bg-white/[.03] max-[960px]:block" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
-      <span class="mx-auto my-[5px] block h-px w-4 bg-white"></span>
-      <span class="mx-auto my-[5px] block h-px w-4 bg-white"></span>
-      <span class="mx-auto my-[5px] block h-px w-4 bg-white"></span>
-      <span class="sr-only">Menu</span>
-    </button>
 
-    <nav id="site-nav" data-nav class="flex h-[42px] items-center gap-6 text-lg font-semibold text-[#c2c2c2] max-[960px]:fixed max-[960px]:inset-x-4 max-[960px]:top-3.5 max-[960px]:grid max-[960px]:h-auto max-[960px]:translate-y-[-130%] max-[960px]:gap-1 max-[960px]:rounded-[22px] max-[960px]:border max-[960px]:border-white/10 max-[960px]:bg-[#010300]/95 max-[960px]:p-[72px_18px_18px] max-[960px]:transition-transform max-[960px]:duration-200 [&.is-open]:max-[960px]:translate-y-0">
-      <a class="p-2.5" href="index.html">Home</a>
-      <a class="p-2.5" href="about.html">About Us</a>
-      <div class="nav-dropdown">
-        <a class="nav-dropdown-trigger p-2.5" href="services.html" aria-haspopup="true">Services <span class="nav-chevron" aria-hidden="true"></span></a>
-        <div class="nav-dropdown-panel" role="menu">
-          <a href="service-digital-engineering.html" role="menuitem">Digital Applications</a>
-          <a href="service-cloud.html" role="menuitem">Cloud Transformation</a>
-          <a href="service-data.html" role="menuitem">Advanced Analytics</a>
-          <a href="service-quality.html" role="menuitem">Quality Engineering</a>
-          <a href="service-security.html" role="menuitem">Cyber Security</a>
-          <a href="guidewire.html" role="menuitem">Guidewire / Insurance</a>
+    <nav id="site-nav" data-nav class="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-11 text-[15px] font-medium text-[#c2c2c2] max-[960px]:fixed max-[960px]:inset-x-4 max-[960px]:top-3 max-[960px]:translate-x-0 max-[960px]:translate-y-[-135%] max-[960px]:flex-col max-[960px]:items-stretch max-[960px]:gap-1 max-[960px]:rounded-[22px] max-[960px]:border max-[960px]:border-white/10 max-[960px]:bg-[#020a07]/95 max-[960px]:p-[64px_16px_16px] max-[960px]:text-base max-[960px]:backdrop-blur-xl max-[960px]:transition-transform max-[960px]:duration-200 [&.is-open]:max-[960px]:translate-y-0">
+      <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="index.html">Home</a>
+      <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="about.html">About Us</a>
+      <div class="group relative max-[960px]:static">
+        <a class="inline-flex items-center gap-1.5 transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5" href="services.html" aria-haspopup="true">Services
+          <svg class="h-3 w-3 opacity-70 transition group-hover:rotate-180" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" /></svg>
+        </a>
+        <div class="invisible absolute left-1/2 top-full z-20 mt-3 w-56 -translate-x-1/2 translate-y-1 rounded-2xl border border-white/10 bg-[#020a07]/95 p-2 opacity-0 shadow-[0_24px_48px_rgba(0,0,0,.45)] backdrop-blur-xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 max-[960px]:visible max-[960px]:static max-[960px]:mt-1 max-[960px]:w-full max-[960px]:translate-x-0 max-[960px]:translate-y-0 max-[960px]:border-0 max-[960px]:bg-transparent max-[960px]:p-0 max-[960px]:pl-3 max-[960px]:opacity-100 max-[960px]:shadow-none" role="menu">
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="service-digital-engineering.html" role="menuitem">Digital Applications</a>
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="service-cloud.html" role="menuitem">Cloud Transformation</a>
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="service-data.html" role="menuitem">Advanced Analytics</a>
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="service-quality.html" role="menuitem">Quality Engineering</a>
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="service-security.html" role="menuitem">Cyber Security</a>
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="guidewire.html" role="menuitem">Guidewire / Insurance</a>
         </div>
       </div>
-      <a class="p-2.5" href="careers.html">Careers</a>
-      <a class="p-2.5" href="resources.html">Resources</a>
-      <a class="inline-flex min-h-[39px] items-center justify-center rounded-[82px] bg-white px-4 py-0 text-[13px] font-bold text-[#010300]" href="contact.html">Get in touch</a>
+      <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="careers.html">Careers</a>
+      <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="resources.html">Resources</a>
+      <a class="hidden max-[960px]:mt-3 max-[960px]:flex max-[960px]:min-h-[46px] max-[960px]:items-center max-[960px]:justify-center max-[960px]:rounded-full max-[960px]:bg-gradient-to-r max-[960px]:from-[#bcffa5] max-[960px]:to-[#28eaf3] max-[960px]:font-bold max-[960px]:text-[#02110d]" href="contact.html">Get in started</a>
     </nav>
+
+    <div class="relative z-10 flex items-center gap-3">
+      <a class="inline-flex min-h-[44px] items-center justify-center rounded-full bg-gradient-to-r from-[#bcffa5] to-[#28eaf3] px-6 text-[14px] font-bold text-[#02110d] shadow-[0_0_24px_rgba(40,234,243,.25)] transition hover:brightness-110 max-[960px]:hidden" href="contact.html">Get in started</a>
+      <button class="hidden h-[42px] w-[42px] items-center justify-center rounded-full border border-white/20 bg-white/[.04] max-[960px]:flex" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span class="sr-only">Menu</span>
+        <span aria-hidden="true" class="relative block h-[10px] w-[18px]"><span class="absolute left-0 top-0 h-[2px] w-full rounded bg-white"></span><span class="absolute left-0 top-1 h-[2px] w-full rounded bg-white"></span><span class="absolute left-0 top-2 h-[2px] w-full rounded bg-white"></span></span>
+      </button>
+    </div>
   </header>
 
   <main id="top">
-    <section class="home-hero relative mx-auto flex min-h-[clamp(920px,71vw,1365px)] w-[min(1744px,calc(100%-176px))] flex-col items-center overflow-hidden py-[137px_72px] text-center max-[1500px]:w-[min(1744px,calc(100%-64px))] max-[760px]:min-h-[790px] max-[760px]:w-[min(100%-28px,1744px)] max-[760px]:pt-24">
-      <div class="hero-glow absolute top-[170px] h-[680px] w-[min(1260px,100%)] rounded-full opacity-100 blur-[94px] [background:radial-gradient(circle_at_18%_23%,rgba(40,234,243,.4),transparent_20rem),radial-gradient(circle_at_68%_37%,rgba(188,255,165,.18),transparent_25rem)]" aria-hidden="true"></div>
+    <section class="relative mx-auto w-[min(1744px,calc(100%-176px))] overflow-hidden pt-[150px] pb-20 max-[1500px]:w-[min(1744px,calc(100%-64px))] max-[760px]:w-[min(100%-28px,1744px)] max-[760px]:pt-28 max-[760px]:pb-12">
+      <div class="pointer-events-none absolute left-[-4%] top-[12%] h-[440px] w-[min(680px,48vw)] rounded-full bg-[radial-gradient(circle_at_40%_42%,rgba(40,234,243,.16),transparent_60%)] opacity-70 blur-[60px] max-[1023px]:hidden" aria-hidden="true"></div>
+      <div class="grid grid-cols-1 items-center gap-14 lg:grid-cols-[0.82fr_1.18fr] lg:gap-10">
 
-      <div class="hero-orbit relative grid aspect-square w-[min(691px,88vw)] place-items-center max-[760px]:w-[min(360px,96vw)]">
-        <video class="relative z-[2] h-[46%] w-[46%] rounded-full object-cover mix-blend-screen drop-shadow-[0_0_30px_rgba(40,234,243,.42)]" src="images/Connect final.mp4" autoplay muted loop playsinline preload="auto" aria-label="Technumen connected intelligence animation"></video>
-        <div class="absolute inset-0 rounded-full border border-white/[.095]"></div>
-        <div class="absolute inset-[9.3%] rounded-full border border-white/[.095]"></div>
-        <div class="absolute inset-[19.3%] rounded-full border border-white/[.095]"></div>
-        <span class="hero-badge hero-badge--ai"><span class="hero-badge-icon"><img src="images/AI.png" alt="" aria-hidden="true" /></span>AI Systems</span>
-        <span class="hero-badge hero-badge--data"><span class="hero-badge-icon"><img src="images/DB.png" alt="" aria-hidden="true" /></span>Data Intelligence</span>
-        <span class="hero-badge hero-badge--digital"><span class="hero-badge-icon"><img src="images/DigitalEngineering.png" alt="" aria-hidden="true" /></span>Digital Engineering</span>
-        <span class="hero-badge hero-badge--automation"><span class="hero-badge-icon"><img src="images/Automation.png" alt="" aria-hidden="true" /></span>Automation</span>
-      </div>
+        <div class="relative z-10 text-center lg:text-left">
+          <h1 class="mx-auto max-w-[680px] text-[clamp(32px,3.9vw,66px)] font-normal leading-[1.08] text-[#eaf3ef] lg:mx-3">Build Scalable, Intelligent Digital Systems</h1>
+          <p class="mx-auto mt-6 max-w-[520px] text-[14px] leading-[1.5] text-[#c2c2c2]  lg:mx-3">We combine AI, Data, and Engineering to modernize platforms, automate workflows, and deliver measurable business outcomes.</p>
+          <div class="mt-9 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
+            <a class="inline-flex min-h-[54px] w-full items-center justify-center rounded-full bg-gradient-to-r from-[#bcffa5] to-[#28eaf3] px-9 text-[17px] font-semibold text-[#03100d] shadow-[0_12px_34px_rgba(40,234,243,0.18)] transition hover:brightness-105 sm:w-auto" href="contact.html">Start a Project</a>
+            <a class="inline-flex min-h-[54px] w-full items-center justify-center rounded-full border border-white/40 bg-white/5 px-9 text-[17px] font-semibold text-[#eaf3ef] transition hover:bg-white/10 sm:w-auto" href="services.html">Explore The System</a>
+          </div>
+        </div>
 
-      <div class="hero-copy relative z-[4] mt-[58px] max-w-[1465px]">
-        <h1 class="m-0 mb-6 text-[clamp(48px,4.17vw,80px)] font-normal leading-[1.2] max-[760px]:text-[70px] max-[760px]:leading-[1.04]">Build Scalable, Intelligent Digital Systems</h1>
-        <p class="text-lg leading-[1.22] text-[#c2c2c2]">We combine AI, Data, and Engineering to modernize platforms, automate workflows, and deliver measurable business outcomes.</p>
-        <div class="mt-[50px] flex justify-center gap-4 max-[760px]:mt-8 max-[760px]:flex-col max-[760px]:items-center">
-          <a class="inline-flex min-h-[54px] items-center justify-center rounded-[50px] bg-white px-8 text-lg font-semibold text-[#0d0d10]" href="contact.html">Start a Project</a>
-          <a class="inline-flex min-h-[54px] items-center justify-center rounded-[50px] border border-white bg-white/10 px-8 text-lg font-semibold text-white" href="services.html">Explore The System</a>
+        <div class="relative z-[2] mx-auto grid aspect-square w-[min(560px,84vw)] place-items-center lg:w-[min(600px,40vw)]">
+          <div class="pointer-events-none absolute inset-[6%] rounded-full blur-[70px] [background:radial-gradient(circle_at_50%_50%,rgba(40,234,243,.2),rgba(188,255,165,.08)_45%,transparent_65%)]" aria-hidden="true"></div>
+          <div class="absolute inset-0 rounded-full border border-white/[0.07]"></div>
+          <div class="absolute inset-[11%] rounded-full border border-white/[0.06]"></div>
+          <div class="absolute inset-[22%] rounded-full border border-white/[0.05]"></div>
+          <video class="relative z-[2] h-[46%] w-[46%] rounded-full object-cover mix-blend-screen drop-shadow-[0_0_30px_rgba(40,234,243,.42)]" src="images/Connect final.mp4" autoplay muted loop playsinline preload="auto" aria-label="Technumen connected intelligence animation"></video>
+
+          <span class="absolute left-1/2 top-[11%] z-[3] inline-flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full border border-[rgba(141,255,218,.16)] bg-[rgba(7,24,19,.72)] py-1.5 pl-1.5 pr-3.5 text-[clamp(11px,1.1vw,14px)] font-semibold text-[#dfe9e5] shadow-[0_16px_36px_rgba(0,0,0,.28)] backdrop-blur-md"><span class="grid h-7 w-7 shrink-0 place-items-center"><img class="h-full w-full object-contain" src="images/AI.png" alt="" aria-hidden="true" /></span>AI Systems</span>
+          <span class="absolute left-[-5%] top-[39%] z-[3] inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-[rgba(141,255,218,.16)] bg-[rgba(7,24,19,.72)] py-1.5 pl-1.5 pr-3.5 text-[clamp(11px,1.1vw,14px)] font-semibold text-[#dfe9e5] shadow-[0_16px_36px_rgba(0,0,0,.28)] backdrop-blur-md"><span class="grid h-7 w-7 shrink-0 place-items-center"><img class="h-full w-full object-contain" src="images/DB.png" alt="" aria-hidden="true" /></span>Data Intelligence</span>
+          <span class="absolute right-[-8%] top-[47%] z-[3] inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-[rgba(141,255,218,.16)] bg-[rgba(7,24,19,.72)] py-1.5 pl-1.5 pr-3.5 text-[clamp(11px,1.1vw,14px)] font-semibold text-[#dfe9e5] shadow-[0_16px_36px_rgba(0,0,0,.28)] backdrop-blur-md"><span class="grid h-7 w-7 shrink-0 place-items-center"><img class="h-full w-full object-contain" src="images/DigitalEngineering.png" alt="" aria-hidden="true" /></span>Digital Engineering</span>
+          <span class="absolute bottom-[11%] left-[32%] z-[3] inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-[rgba(141,255,218,.16)] bg-[rgba(7,24,19,.72)] py-1.5 pl-1.5 pr-3.5 text-[clamp(11px,1.1vw,14px)] font-semibold text-[#dfe9e5] shadow-[0_16px_36px_rgba(0,0,0,.28)] backdrop-blur-md"><span class="grid h-7 w-7 shrink-0 place-items-center"><img class="h-full w-full object-contain" src="images/Automation.png" alt="" aria-hidden="true" /></span>Automation</span>
         </div>
       </div>
 
-      <div class="hero-trust relative z-[4] mt-24 w-full">
-        <p class="section-kicker">Trusted By 100+ Customers</p>     
-        <div class="client-logos" aria-label="Technumen clients">
-          <span class="client-logo-text">BlackRock.</span>
-          <span class="client-logo-text">Revolut</span>
-          <span class="client-logo-text client-logo-text--serif">JPMorganChase</span>
-          <span class="client-logo-text">Parmenion</span>
-          <span class="client-logo-text">7WISE</span>
-          <span class="client-logo-text client-logo-text--serif">JPMorganChase</span>
-          <span class="client-logo-text">Revolut</span>
+      <div class="relative z-10 mt-20 text-center max-[760px]:mt-14">
+        <p class="text-[13px] section-kicker">Trusted By 100+ Customers</p>
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 text-xl text-[#c2c2c2]/70" aria-label="Technumen clients">
+          <span class="font-semibold">BlackRock.</span>
+          <span class="font-medium">Revolut</span>
+          <span class="font-medium">JPMorganChase</span>
+          <span class="font-medium">Parmenion</span>
+          <span class="font-semibold">7WISE</span>
+          <span class="font-medium">JPMorganChase</span>
+          <span class="font-medium">Revolut</span>
         </div>
       </div>
     </section>
 
     <section class="home-stats grid w-full grid-cols-4 gap-4 border-y border-white/10 bg-[#0a1010] px-[max(24px,calc((100vw-1208px)/2))] py-[55px] text-center max-[960px]:grid-cols-2 max-[760px]:grid-cols-1 max-[760px]:gap-7 max-[760px]:px-6 max-[760px]:py-11">
-      <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">$11M+</strong><span class="font-['Inter'] text-[13px] text-[#c2c2c2]">Enterprise clients served</span></div>
-      <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">79.14%</strong><span class="font-['Inter'] text-[13px] text-[#c2c2c2]">Years of deep domain expertise</span></div>
-      <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">$299/y</strong><span class="font-['Inter'] text-[13px] text-[#c2c2c2]">Client retention rate</span></div>
-      <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">34k+</strong><span class="font-['Inter'] text-[13px] text-[#c2c2c2]">Countries of active presence</span></div>
-      <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">120+</strong><span class="font-['Inter'] text-[13px] text-[#c2c2c2]">Projects completed successfully</span></div>
+      <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">$11M+</strong><span class="font-['Urbanist',Inter,Arial,sans-serif] text-[13px] text-[#c2c2c2]">Enterprise clients served</span></div>
+      <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">79.14%</strong><span class="font-['Urbanist',Inter,Arial,sans-serif] text-[13px] text-[#c2c2c2]">Years of deep domain expertise</span></div>
+      <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">$299/y</strong><span class="font-['Urbanist',Inter,Arial,sans-serif] text-[13px] text-[#c2c2c2]">Client retention rate</span></div>
+      <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">34k+</strong><span class="font-['Urbanist',Inter,Arial,sans-serif] text-[13px] text-[#c2c2c2]">Countries of active presence</span></div>
+      <div class="grid gap-[18px]"><strong class="text-[clamp(36px,2.5vw,48px)] font-normal text-[#28eaf3]">120+</strong><span class="font-['Urbanist',Inter,Arial,sans-serif] text-[13px] text-[#c2c2c2]">Projects completed successfully</span></div>
     </section>
 
     <section id="pillars" class="bg-[#0a1010]">
@@ -163,19 +171,19 @@
 
         <div class="relative min-h-[651px] max-w-[1007px] justify-self-end overflow-hidden rounded-[2px] bg-[radial-gradient(ellipse_at_52%_35%,rgba(40,234,243,.18),transparent_24rem),radial-gradient(ellipse_at_24%_78%,rgba(255,255,255,.08),transparent_18rem),linear-gradient(135deg,#20271f,#243026_54%,#1d241c)] p-[48px_68px_60px] max-[1500px]:min-h-[560px] max-[1500px]:p-[36px_42px_46px] max-[1180px]:justify-self-stretch max-[760px]:min-h-0 max-[760px]:p-7">
           <h2 class="relative z-[3] m-0 mb-[72px] text-[32px] font-light leading-[1.85] tracking-[-1px] max-[760px]:mb-7 max-[760px]:text-[26px] max-[760px]:leading-[1.25]">Claims intelligence dashboard</h2>
-          <span class="absolute left-[142px] top-[171px] z-[9] inline-flex h-[22px] items-center rounded border border-[#f8fafd] bg-white px-2 font-['Inter'] text-[10.3px] text-black shadow-[0_16px_32px_-8px_rgba(50,50,93,.12)] max-[1500px]:left-[88px] max-[1500px]:top-[146px] max-[760px]:hidden">US$999.00</span>
+          <span class="absolute left-[142px] top-[171px] z-[9] inline-flex h-[22px] items-center rounded border border-[#f8fafd] bg-white px-2 font-['Urbanist',Inter,Arial,sans-serif] text-[10.3px] text-black shadow-[0_16px_32px_-8px_rgba(50,50,93,.12)] max-[1500px]:left-[88px] max-[1500px]:top-[146px] max-[760px]:hidden">US$999.00</span>
           <div class="relative z-[4] ml-auto min-h-[463px] w-[727px] rounded-md border border-[#e5edf5]/50 bg-[#f8fafd]/45 shadow-[0_15px_35px_rgba(23,23,23,.08)] backdrop-blur-md max-[1500px]:min-h-[394px] max-[1500px]:w-[620px] max-[760px]:w-full">
-            <div class="flex h-[35px] items-center gap-1.5 px-5"><span class="h-2 w-2 rounded-full bg-black"></span><span class="h-2 w-2 rounded-full bg-black"></span><span class="h-2 w-2 rounded-full bg-black"></span><div class="mx-auto flex h-5 w-[262px] items-center justify-center gap-1 rounded-2xl border border-[#e5edf5]/50 bg-white/40 font-['Inter'] text-[8.4px] text-[#667691]"><i class="h-2 w-[7px] rounded-sm bg-[#667691] opacity-70"></i>dashboard.zenflow.com</div></div>
+            <div class="flex h-[35px] items-center gap-1.5 px-5"><span class="h-2 w-2 rounded-full bg-black"></span><span class="h-2 w-2 rounded-full bg-black"></span><span class="h-2 w-2 rounded-full bg-black"></span><div class="mx-auto flex h-5 w-[262px] items-center justify-center gap-1 rounded-2xl border border-[#e5edf5]/50 bg-white/40 font-['Urbanist',Inter,Arial,sans-serif] text-[8.4px] text-[#667691]"><i class="h-2 w-[7px] rounded-sm bg-[#667691] opacity-70"></i>dashboard.zenflow.com</div></div>
             <div class="relative m-[0_6px_6px] min-h-[422px] overflow-visible rounded-md border border-[#f8fafd] bg-white shadow-[0_4px_48px_-30px_rgba(50,50,93,.12),0_18px_36px_-18px_rgba(0,0,0,.1)] max-[1500px]:min-h-[353px] max-[760px]:min-h-0 max-[760px]:pt-[65px]">
-              <div class="absolute left-0 top-0 flex h-[65px] w-[181px] items-center gap-2 pl-6 font-['Inter'] text-[11.1px] text-[#061b31]"><span class="h-[25px] w-[25px] rounded-full bg-[radial-gradient(circle_at_50%_50%,#ce0045_0_3px,transparent_4px),#ffd7ef]"></span>Zenflow</div>
+              <div class="absolute left-0 top-0 flex h-[65px] w-[181px] items-center gap-2 pl-6 font-['Urbanist',Inter,Arial,sans-serif] text-[11.1px] text-[#061b31]"><span class="h-[25px] w-[25px] rounded-full bg-[radial-gradient(circle_at_50%_50%,#ce0045_0_3px,transparent_4px),#ffd7ef]"></span>Zenflow</div>
               <article class="absolute left-[-151px] top-12 z-[7] min-h-[326px] w-[296px] rounded-[10px] border border-[#e5edf5]/50 bg-white p-[22px_18px_20px] text-[#061b31] shadow-[0_15px_32px_rgba(50,50,93,.12)] max-[1500px]:left-[-104px] max-[1500px]:top-10 max-[1500px]:min-h-[278px] max-[1500px]:w-[250px] max-[1500px]:p-[18px_15px] max-[760px]:relative max-[760px]:left-auto max-[760px]:top-auto max-[760px]:m-[0_14px_14px] max-[760px]:w-auto">
-                <div class="mb-5 flex items-center gap-2.5"><span class="grid h-[29px] w-[29px] place-items-center rounded-full bg-[linear-gradient(169deg,#938dff_8%,#533afd_124%)] text-[8px] font-bold text-white">DB</span><strong class="font-['Inter'] text-[14.2px] font-normal">Daybreak Yoga</strong></div>
-                <p class="mb-[21px] font-['Inter'] text-[10.3px] leading-[1.45] text-[#061b31] max-[1500px]:mb-4 max-[1500px]:text-[9px]">Thank you!<br />Your unlimited yoga subscription is now active.</p>
-                <dl class="m-0 font-['Inter'] text-[10.5px] text-[#64748d] max-[1500px]:text-[9px] [&_dd]:m-0 [&_div]:flex [&_div]:min-h-[42px] [&_div]:items-center [&_div]:justify-between [&_div]:border-t [&_div]:border-[#e5edf5] [&_div:last-child]:text-[#061b31] max-[1500px]:[&_div]:min-h-9"><div><dt>Order number</dt><dd>#9803890</dd></div><div><dt>Date</dt><dd>20 Jan</dd></div><div><dt>Payment method</dt><dd><b class="grid h-[15px] w-[21px] place-items-center rounded-sm bg-[#1434cb] text-[6px] text-white">VISA</b></dd></div><div><dt>Your plan</dt><dd>US$999.00 /year</dd></div><div><dt>Total</dt><dd>US$999.00</dd></div></dl>
+                <div class="mb-5 flex items-center gap-2.5"><span class="grid h-[29px] w-[29px] place-items-center rounded-full bg-[linear-gradient(169deg,#938dff_8%,#533afd_124%)] text-[8px] font-bold text-white">DB</span><strong class="font-['Urbanist',Inter,Arial,sans-serif] text-[14.2px] font-normal">Daybreak Yoga</strong></div>
+                <p class="mb-[21px] font-['Urbanist',Inter,Arial,sans-serif] text-[10.3px] leading-[1.45] text-[#061b31] max-[1500px]:mb-4 max-[1500px]:text-[9px]">Thank you!<br />Your unlimited yoga subscription is now active.</p>
+                <dl class="m-0 font-['Urbanist',Inter,Arial,sans-serif] text-[10.5px] text-[#64748d] max-[1500px]:text-[9px] [&_dd]:m-0 [&_div]:flex [&_div]:min-h-[42px] [&_div]:items-center [&_div]:justify-between [&_div]:border-t [&_div]:border-[#e5edf5] [&_div:last-child]:text-[#061b31] max-[1500px]:[&_div]:min-h-9"><div><dt>Order number</dt><dd>#9803890</dd></div><div><dt>Date</dt><dd>20 Jan</dd></div><div><dt>Payment method</dt><dd><b class="grid h-[15px] w-[21px] place-items-center rounded-sm bg-[#1434cb] text-[6px] text-white">VISA</b></dd></div><div><dt>Your plan</dt><dd>US$999.00 /year</dd></div><div><dt>Total</dt><dd>US$999.00</dd></div></dl>
               </article>
               <div class="absolute inset-y-0 left-[181px] right-0 overflow-hidden border-l border-[#e5edf5] max-[760px]:relative max-[760px]:inset-auto max-[760px]:border-l-0">
-                <h3 class="m-0 p-[23px_24px_18px] font-['Inter'] text-[13.2px] font-normal leading-[1.75] text-[#061b31] max-[1500px]:p-[18px_20px_12px] max-[1500px]:text-[11px]">Connected Accounts</h3>
-                <div class="grid font-['Inter'] text-[9.4px] text-[#50617a] max-[1500px]:text-[8px] [&>div]:grid [&>div]:min-h-[31px] [&>div]:grid-cols-[1.32fr_1fr_1.24fr_1fr] [&>div]:items-center [&>div]:border-t [&>div]:border-[#e5edf5] [&>div]:px-6 [&_b]:grid [&_b]:h-4 [&_b]:w-4 [&_b]:place-items-center [&_b]:rounded-full [&_b]:text-[7px] [&_b]:font-bold [&_span:first-child]:flex [&_span:first-child]:items-center [&_span:first-child]:gap-1.5 [&_span:first-child]:text-[#061b31] max-[1500px]:[&>div]:min-h-[26px] max-[1500px]:[&>div]:px-5 max-[1500px]:[&_b]:h-3.5 max-[1500px]:[&_b]:w-3.5 max-[1500px]:[&_b]:text-[6px] max-[760px]:[&>div]:grid-cols-[1.2fr_.8fr] max-[760px]:[&>div]:gap-x-2.5 max-[760px]:[&>div]:px-3.5 max-[760px]:[&>div]:py-2 max-[760px]:[&>div_span:nth-child(3)]:hidden max-[760px]:[&>div_span:nth-child(4)]:hidden">
+                <h3 class="m-0 p-[23px_24px_18px] font-['Urbanist',Inter,Arial,sans-serif] text-[13.2px] font-normal leading-[1.75] text-[#061b31] max-[1500px]:p-[18px_20px_12px] max-[1500px]:text-[11px]">Connected Accounts</h3>
+                <div class="grid font-['Urbanist',Inter,Arial,sans-serif] text-[9.4px] text-[#50617a] max-[1500px]:text-[8px] [&>div]:grid [&>div]:min-h-[31px] [&>div]:grid-cols-[1.32fr_1fr_1.24fr_1fr] [&>div]:items-center [&>div]:border-t [&>div]:border-[#e5edf5] [&>div]:px-6 [&_b]:grid [&_b]:h-4 [&_b]:w-4 [&_b]:place-items-center [&_b]:rounded-full [&_b]:text-[7px] [&_b]:font-bold [&_span:first-child]:flex [&_span:first-child]:items-center [&_span:first-child]:gap-1.5 [&_span:first-child]:text-[#061b31] max-[1500px]:[&>div]:min-h-[26px] max-[1500px]:[&>div]:px-5 max-[1500px]:[&_b]:h-3.5 max-[1500px]:[&_b]:w-3.5 max-[1500px]:[&_b]:text-[6px] max-[760px]:[&>div]:grid-cols-[1.2fr_.8fr] max-[760px]:[&>div]:gap-x-2.5 max-[760px]:[&>div]:px-3.5 max-[760px]:[&>div]:py-2 max-[760px]:[&>div_span:nth-child(3)]:hidden max-[760px]:[&>div_span:nth-child(4)]:hidden">
                   <div class="min-h-[22px]! border-t-0! text-[8.6px] text-[#061b31]"><span>Accounts</span><span>Account country</span><span>Payment balance (INR)</span><span>Volume (USD)</span></div>
                   <div><span><b class="bg-[#ecf0f4] text-[#10120c]">VF</b>Vital Flow</span><span>Canada</span><span>&#8377;667,840.00</span><span>&#8377;5,725,038.40</span></div>
                   <div><span><b class="bg-[#938dff] text-white">DB</b>Daybreak Yoga</span><span>United States</span><span>&#8377;120,160.00</span><span>&#8377;630,400.00</span></div>
@@ -220,14 +228,16 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <a class="site-footer-logo" href="index.html" aria-label="Technumen home"><img src="images/technumen-logo.png" alt="Technumen" /></a>
-    <nav class="site-footer-links" aria-label="Footer">
-      <a href="resources.html">Terms of Service</a>
-      <a href="resources.html">Privacy Policy</a>
-      <a href="resources.html">Cookies</a>
-    </nav>
-    <small>&copy; 2026 Technumen Inc. All rights reserved.</small>
+  <footer class="mt-auto border-t border-white/10 bg-[#0a1010]">
+    <div class="mx-auto flex w-[min(1744px,calc(100%-120px))] flex-col items-center gap-6 py-9 text-center sm:flex-row sm:justify-between sm:gap-8 sm:text-left max-[960px]:w-[calc(100%-48px)]">
+      <a class="shrink-0" href="index.html" aria-label="Technumen home"><img class="h-7 w-auto" src="images/technumen-logo.png" alt="Technumen" /></a>
+      <nav class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2" aria-label="Footer">
+        <a class="text-sm text-white/65 transition hover:text-white" href="resources.html">Terms of Service</a>
+        <a class="text-sm text-white/65 transition hover:text-white" href="resources.html">Privacy Policy</a>
+        <a class="text-sm text-white/65 transition hover:text-white" href="resources.html">Cookies</a>
+      </nav>
+      <small class="text-sm text-white/55">&copy; 2026 Technumen Inc. All rights reserved.</small>
+    </div>
   </footer>
 
   <script type="module" src="script.js"></script>

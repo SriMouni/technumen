@@ -357,12 +357,12 @@ const view = {
   contentGrid: "content-grid mt-12 grid grid-cols-3 gap-5 max-[960px]:grid-cols-2 max-[760px]:grid-cols-1",
   contentCard: "content-card content-card--motion relative min-h-[220px] overflow-hidden rounded-lg border border-[rgba(255,255,255,.12)] bg-[linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015))] p-7",
   contentTitle: "m-[0_0_12px] font-['Urbanist',Inter,Arial,sans-serif] text-[21px] font-semibold leading-[1.2] text-[#e4e4e4]",
-  contentBody: "m-0 font-['Inter',Arial,sans-serif] text-sm font-light leading-[1.5] text-[#c2c2c2]",
+  contentBody: "m-0 font-['Urbanist',Inter,Arial,sans-serif] text-sm font-light leading-[1.5] text-[#c2c2c2]",
   contentLink: "content-link mt-[18px] inline-flex text-sm font-semibold text-[#bcffa5] no-underline",
   pageStats: "page-stats mt-12 grid grid-cols-4 gap-4 max-[760px]:grid-cols-1",
   statCard: "rounded-lg border border-white/10 bg-white/[.035] p-6",
   statNumber: "block text-[38px] font-normal leading-none text-[#28eaf3]",
-  statLabel: "mt-3 block font-['Inter',Arial,sans-serif] text-xs text-[#c2c2c2]",
+  statLabel: "mt-3 block font-['Urbanist',Inter,Arial,sans-serif] text-xs text-[#c2c2c2]",
   pageCta: "page-cta pt-9",
   footerLink: "mb-4 block text-sm leading-[17px] tracking-[-.09px] text-white"
 };
