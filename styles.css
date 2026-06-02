@@ -35,18 +35,18 @@
   }
 .section-kicker {
   display: inline-block; margin: 0;
-  font-size: 13px; font-weight: 600; line-height: 1.2; letter-spacing: -0.09px;
-  background:  linear-gradient(91.15deg, #28EAF3 0%, #BCFFA5 24.57%);
+  font-size: 18px; font-weight: 600; line-height: 1.22; letter-spacing: -0.09px;
+  background: linear-gradient(91.15deg, #28EAF3 0%, #BCFFA5 24.57%);
   -webkit-background-clip: text; background-clip: text;
   -webkit-text-fill-color: transparent; color: transparent;
 }
 .section-title {
   margin: 11px 0; color: #fff;
-  font-size: clamp(26px, 2.3vw, 32px); font-weight: 500; line-height: 1.2; letter-spacing: -0.09px;
+  font-size: clamp(24px, 2.2vw, 30px); font-weight: 500; line-height: 1.2; letter-spacing: -0.09px;
 }
 .section-body {
   margin: 0; color: #c2c2c2;
-  font-size: 15px; font-weight: 400; line-height: 1.5; letter-spacing: -0.09px;
+  font-size: clamp(15px, 1.25vw, 18px); font-weight: 400; line-height: 1.45; letter-spacing: -0.09px;
 }
 /*  ============================================================
      STATS
