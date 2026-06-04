@@ -46,7 +46,7 @@
 }
 .section-body {
   margin: 0; color: #c2c2c2;
-  font-size: clamp(15px, 1.25vw, 18px); font-weight: 400; line-height: 1.45; letter-spacing: -0.09px;
+  font-size: clamp(15px, 1.25vw, 15px); font-weight: 400; line-height: 1.45; letter-spacing: -0.09px;
 }
 /*  ============================================================
      STATS
@@ -454,6 +454,15 @@
 
   .service-data-packet--one { top: 128px; }
   .service-data-packet--two { top: 177px; animation-delay: 1.7s; animation-duration: 5.6s; }
+
+  .home-page {
+
+  background:
+    radial-gradient(circle at 20% 14%, rgba(0, 185, 169, 0.16), transparent 25rem),
+    radial-gradient(circle at 75% 17%, rgba(111, 245, 171, 0.13), transparent 32rem),
+    linear-gradient(180deg, #010403 0%, #020604 42%, #010301 100%);
+}
+
 
 .home-page #pillars {
   margin-top: 52px;
@@ -1169,6 +1178,16 @@
   margin-bottom: 5px;
 }
 
+.home-page #domains > div:first-child > div:first-child > p:not(.section-kicker) {
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+}
+
+.home-page #domains > div:first-child ul li {
+  font-size: 14px !important;
+  line-height: 1.67 !important;
+}
+
 .home-page #domains > div:first-child > div:last-child {
   min-height: 390px;
   border-radius: 5px;
@@ -1754,11 +1773,39 @@
 .home-page {
   --home-max: 1744px;
   --home-gutter: 48px;
-  background:
-    radial-gradient(circle at 20% 13%, rgba(0, 185, 169, 0.14), transparent 24rem),
-      radial-gradient(circle at 74% 16%, rgba(111, 245, 171, 0.12), transparent 30rem),
-      linear-gradient(180deg, #010403 0%, #020604 43%, #010301 100%);
+  background: linear-gradient(180deg, #010403 0%, #020604 43%, #010301 100%);
     color: rgba(214, 226, 220, 0.82);
+}
+
+.hero-copy-glow,
+.domain-copy-glow {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-copy-glow::before,
+.domain-copy-glow::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  pointer-events: none;
+  border-radius: 999px;
+}
+
+.hero-copy-glow::before {
+  left: -90px;
+  top: -256px;
+  width: min(720px, 300%);
+  aspect-ratio: 1;
+  background: radial-gradient(circle at 42% 52%, rgba(40, 234, 243, 0.18) 0 18%, rgba(40, 234, 243, 0.08) 34%, transparent 70%);
+}
+
+.domain-copy-glow::before {
+  left: -100px;
+  top: -150px;
+  width: min(760px, 72vw);
+  aspect-ratio: 1;
+  background: radial-gradient(circle at 42% 52%, rgba(40, 234, 243, 0.18) 0 18%, rgba(40, 234, 243, 0.08) 34%, transparent 70%);
 }
 
 .home-page main {
@@ -2148,6 +2195,10 @@
   .home-page #domains > div:first-child p {
     font-size: 14px;
     line-height: 1.55;
+  }
+
+  .home-page #domains > div:first-child ul li {
+    font-size: 12px !important;
   }
 
   .home-page footer {
