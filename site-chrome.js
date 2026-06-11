@@ -1,0 +1,70 @@
+// Shared site chrome — the header and footer for every page live here ONCE.
+// Edit the nav links, logo, or footer below and the change applies site-wide.
+// Each page just drops <div data-site-header></div> / <div data-site-footer></div>
+// placeholders where the chrome should appear; this module swaps them in.
+
+// Import the logo so Vite resolves and emits it (a bare "images/..." string in
+// this markup would not be tracked by the bundler and 404s in the build).
+import logoUrl from "./images/technumen-logo.png";
+
+const header = `
+  <header data-header class="fixed inset-x-0 top-6 z-50 mx-auto flex h-[68px] w-[min(1744px,calc(100%-120px))] items-center justify-between rounded-full border border-white/10 bg-[rgba(2,10,7,.5)] px-6 backdrop-blur-xl transition-all duration-300 [&.is-scrolled]:border-white/[.14] [&.is-scrolled]:bg-[rgba(2,10,7,.85)] max-[1180px]:w-[calc(100%-48px)] max-[960px]:top-4 max-[960px]:h-[58px] max-[960px]:px-4">
+    <a class="relative z-10 flex items-center" href="index.html" aria-label="Technumen home">
+      <img class="h-7 w-auto max-[960px]:h-6" src="${logoUrl}" alt="Technumen" />
+    </a>
+
+    <nav id="site-nav" data-nav class="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-11 text-[15px] font-medium text-[#c2c2c2] max-[960px]:fixed max-[960px]:inset-x-4 max-[960px]:top-3 max-[960px]:translate-x-0 max-[960px]:translate-y-[-135%] max-[960px]:flex-col max-[960px]:items-stretch max-[960px]:gap-1 max-[960px]:rounded-[22px] max-[960px]:border max-[960px]:border-white/10 max-[960px]:bg-[#020a07]/95 max-[960px]:p-[64px_16px_16px] max-[960px]:text-base max-[960px]:backdrop-blur-xl max-[960px]:transition-transform max-[960px]:duration-200 [&.is-open]:max-[960px]:translate-y-0">
+      <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="index.html">Home</a>
+      <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="about.html">About Us</a>
+      <div class="group relative max-[960px]:static">
+        <a class="inline-flex items-center gap-1.5 transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5" href="services.html" aria-haspopup="true">Services
+          <svg class="h-3 w-3 opacity-70 transition group-hover:rotate-180" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" /></svg>
+        </a>
+        <div class="invisible absolute left-1/2 top-full z-20 mt-3 w-56 -translate-x-1/2 translate-y-1 rounded-2xl border border-white/10 bg-[#020a07]/95 p-2 opacity-0 shadow-[0_24px_48px_rgba(0,0,0,.45)] backdrop-blur-xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 max-[960px]:visible max-[960px]:static max-[960px]:mt-1 max-[960px]:w-full max-[960px]:translate-x-0 max-[960px]:translate-y-0 max-[960px]:border-0 max-[960px]:bg-transparent max-[960px]:p-0 max-[960px]:pl-3 max-[960px]:opacity-100 max-[960px]:shadow-none" role="menu">
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="service-digital-engineering.html" role="menuitem">Digital Applications</a>
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="service-cloud.html" role="menuitem">Cloud Transformation</a>
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="service-data.html" role="menuitem">Advanced Analytics</a>
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="service-quality.html" role="menuitem">Quality Engineering</a>
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="service-security.html" role="menuitem">Cyber Security</a>
+          <a class="block rounded-lg px-3 py-2 text-sm text-[#c2c2c2] transition hover:bg-white/5 hover:text-white" href="guidewire.html" role="menuitem">Guidewire / Insurance</a>
+        </div>
+      </div>
+      <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="careers.html">Careers</a>
+      <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="resources.html">Resources</a>
+      <a class="hidden max-[960px]:mt-3 max-[960px]:flex max-[960px]:min-h-[46px] max-[960px]:items-center max-[960px]:justify-center max-[960px]:rounded-full max-[960px]:bg-gradient-to-r max-[960px]:from-[#bcffa5] max-[960px]:to-[#28eaf3] max-[960px]:font-bold max-[960px]:text-[#02110d]" href="contact.html">Get in started</a>
+    </nav>
+
+    <div class="relative z-10 flex items-center gap-3">
+      <a class="inline-flex min-h-[44px] items-center justify-center rounded-full bg-gradient-to-r from-[#bcffa5] to-[#28eaf3] px-6 text-[14px] font-bold text-[#02110d] shadow-[0_0_24px_rgba(40,234,243,.25)] transition hover:brightness-110 max-[960px]:hidden" href="contact.html">Get in started</a>
+      <button class="hidden h-[42px] w-[42px] items-center justify-center rounded-full border border-white/20 bg-white/[.04] max-[960px]:flex" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span class="sr-only">Menu</span>
+        <span aria-hidden="true" class="relative block h-[10px] w-[18px]"><span class="absolute left-0 top-0 h-[2px] w-full rounded bg-white"></span><span class="absolute left-0 top-1 h-[2px] w-full rounded bg-white"></span><span class="absolute left-0 top-2 h-[2px] w-full rounded bg-white"></span></span>
+      </button>
+    </div>
+  </header>
+`;
+
+const footer = `
+  <footer class="mt-auto border-t border-white/10 bg-[#0a1010]">
+    <div class="mx-auto flex w-[min(1744px,calc(100%-120px))] flex-col items-center gap-6 py-9 text-center sm:flex-row sm:justify-between sm:gap-8 sm:text-left max-[960px]:w-[calc(100%-48px)]">
+      <a class="shrink-0" href="index.html" aria-label="Technumen home"><img class="h-7 w-auto" src="${logoUrl}" alt="Technumen" /></a>
+      <nav class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2" aria-label="Footer">
+        <a class="text-sm text-white/65 transition hover:text-white" href="resources.html">Terms of Service</a>
+        <a class="text-sm text-white/65 transition hover:text-white" href="resources.html">Privacy Policy</a>
+        <a class="text-sm text-white/65 transition hover:text-white" href="resources.html">Cookies</a>
+      </nav>
+      <small class="text-sm text-white/55">&copy; 2026 Technumen Inc. All rights reserved.</small>
+    </div>
+  </footer>
+`;
+
+function mount(selector, markup) {
+  const slot = document.querySelector(selector);
+  if (!slot) return;
+  const template = document.createElement("template");
+  template.innerHTML = markup.trim();
+  slot.replaceWith(template.content);
+}
+
+mount("[data-site-header]", header);
+mount("[data-site-footer]", footer);

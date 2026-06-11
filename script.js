@@ -1,3 +1,5 @@
+import "./site-chrome.js";
+
 const nav = document.querySelector("[data-nav]");
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const header = document.querySelector("[data-header]");
@@ -6,18 +8,18 @@ const canvas = document.querySelector("#system-canvas");
 const ctx = canvas?.getContext("2d");
 
 function syncHeaderState() {
-  header.classList.toggle("is-scrolled", window.scrollY > 24);
+  header?.classList.toggle("is-scrolled", window.scrollY > 24);
 }
 
 syncHeaderState();
 window.addEventListener("scroll", syncHeaderState, { passive: true });
 
-menuToggle.addEventListener("click", () => {
+menuToggle?.addEventListener("click", () => {
   const open = nav.classList.toggle("is-open");
   menuToggle.setAttribute("aria-expanded", String(open));
 });
 
-nav.addEventListener("click", (event) => {
+nav?.addEventListener("click", (event) => {
   if (event.target.tagName === "A") {
     nav.classList.remove("is-open");
     menuToggle.setAttribute("aria-expanded", "false");
