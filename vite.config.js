@@ -18,7 +18,11 @@ export default defineConfig({
         "service-data": "service-data.html",
         "service-digital-engineering": "service-digital-engineering.html",
         "service-quality": "service-quality.html",
-        "service-security": "service-security.html"
+        "service-security": "service-security.html",
+        "financial-services": "financial-services.html",
+        terms: "terms.html",
+        privacy: "privacy.html",
+        cookies: "cookies.html"
       }
     }
   }

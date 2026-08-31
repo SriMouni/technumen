@@ -13,11 +13,12 @@
 </head>
 <body class="site-page home-page min-w-80 overflow-x-hidden bg-[#010300] font-['Urbanist',Inter,Arial,sans-serif] text-white [background:radial-gradient(circle_at_13%_6%,rgba(40,234,243,.18),transparent_25rem),radial-gradient(circle_at_78%_20%,rgba(188,255,165,.08),transparent_34rem),linear-gradient(176.85deg,#010300_58.86%,#313a2d_116.83%)]">
   <header data-header class="fixed inset-x-0 top-6 z-50 mx-auto flex h-[68px] w-[min(1744px,calc(100%-120px))] items-center justify-between rounded-full border border-white/10 bg-[rgba(2,10,7,.5)] px-6 backdrop-blur-xl transition-all duration-300 [&.is-scrolled]:border-white/[.14] [&.is-scrolled]:bg-[rgba(2,10,7,.85)] max-[1180px]:w-[calc(100%-48px)] max-[960px]:top-4 max-[960px]:h-[58px] max-[960px]:px-4">
-    <a class="relative z-10 flex items-center" href="index.html" aria-label="Technumen home">
+    <a class="relative z-10 flex flex-col items-start justify-center gap-[3px]" href="index.html" aria-label="Technumen home">
       <img class="h-7 w-auto max-[960px]:h-6" src="images/technumen-logo.png" alt="Technumen" />
+      <span class="header-tagline">An AI-Native, CMMI SVC Level 3 Company</span>
     </a>
 
-    <nav id="site-nav" data-nav class="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center gap-11 text-[15px] font-medium text-[#c2c2c2] max-[960px]:fixed max-[960px]:inset-x-4 max-[960px]:top-3 max-[960px]:translate-x-0 max-[960px]:translate-y-[-135%] max-[960px]:flex-col max-[960px]:items-stretch max-[960px]:gap-1 max-[960px]:rounded-[22px] max-[960px]:border max-[960px]:border-white/10 max-[960px]:bg-[#020a07]/95 max-[960px]:p-[64px_16px_16px] max-[960px]:text-base max-[960px]:backdrop-blur-xl max-[960px]:transition-transform max-[960px]:duration-200 [&.is-open]:max-[960px]:translate-y-0">
+    <nav id="site-nav" data-nav class="flex items-center gap-9 text-[15px] font-medium text-[#c2c2c2] max-[960px]:fixed max-[960px]:inset-x-4 max-[960px]:top-3 max-[960px]:translate-x-0 max-[960px]:translate-y-[-135%] max-[960px]:flex-col max-[960px]:items-stretch max-[960px]:gap-1 max-[960px]:rounded-[22px] max-[960px]:border max-[960px]:border-white/10 max-[960px]:bg-[#020a07]/95 max-[960px]:p-[64px_16px_16px] max-[960px]:text-base max-[960px]:backdrop-blur-xl max-[960px]:transition-transform max-[960px]:duration-200 [&.is-open]:max-[960px]:translate-y-0">
       <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="index.html">Home</a>
       <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="about.html">About Us</a>
       <div class="group relative max-[960px]:static">
@@ -35,29 +36,81 @@
       </div>
       <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="careers.html">Careers</a>
       <a class="transition-colors hover:text-white max-[960px]:rounded-lg max-[960px]:px-3 max-[960px]:py-2.5 max-[960px]:hover:bg-white/5" href="resources.html">Resources</a>
-      <a class="hidden max-[960px]:mt-3 max-[960px]:flex max-[960px]:min-h-[46px] max-[960px]:items-center max-[960px]:justify-center max-[960px]:rounded-full max-[960px]:bg-gradient-to-r max-[960px]:from-[#bcffa5] max-[960px]:to-[#28eaf3] max-[960px]:font-bold max-[960px]:text-[#02110d]" href="contact.html">Get in started</a>
+      <a class="hidden max-[960px]:mt-3 max-[960px]:flex max-[960px]:min-h-[46px] max-[960px]:items-center max-[960px]:justify-center max-[960px]:rounded-full max-[960px]:bg-gradient-to-r max-[960px]:from-[#bcffa5] max-[960px]:to-[#28eaf3] max-[960px]:font-bold max-[960px]:text-[#02110d]" href="contact.html">Get in Touch</a>
     </nav>
 
     <div class="relative z-10 flex items-center gap-3">
-      <a class="inline-flex min-h-[44px] items-center justify-center rounded-full bg-gradient-to-r from-[#bcffa5] to-[#28eaf3] px-6 text-[14px] font-bold text-[#02110d] shadow-[0_0_24px_rgba(40,234,243,.25)] transition hover:brightness-110 max-[960px]:hidden" href="contact.html">Get in started</a>
+      <a class="inline-flex min-h-[44px] items-center justify-center rounded-full bg-gradient-to-r from-[#bcffa5] to-[#28eaf3] px-6 text-[14px] font-bold text-[#02110d] shadow-[0_0_24px_rgba(40,234,243,.25)] transition hover:brightness-110 max-[960px]:hidden" href="contact.html">Get in Touch</a>
       <button class="hidden h-[42px] w-[42px] items-center justify-center rounded-full border border-white/20 bg-white/[.04] max-[960px]:flex" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
         <span class="sr-only">Menu</span>
         <span aria-hidden="true" class="relative block h-[10px] w-[18px]"><span class="absolute left-0 top-0 h-[2px] w-full rounded bg-white"></span><span class="absolute left-0 top-1 h-[2px] w-full rounded bg-white"></span><span class="absolute left-0 top-2 h-[2px] w-full rounded bg-white"></span></span>
       </button>
     </div>
   </header>
+
   <main data-page-root></main>
-  <footer class="mt-auto border-t border-white/10 bg-[#0a1010]">
-    <div class="mx-auto flex w-[min(1744px,calc(100%-120px))] flex-col items-center gap-6 py-9 text-center sm:flex-row sm:justify-between sm:gap-8 sm:text-left max-[960px]:w-[calc(100%-48px)]">
-      <a class="shrink-0" href="index.html" aria-label="Technumen home"><img class="h-7 w-auto" src="images/technumen-logo.png" alt="Technumen" /></a>
-      <nav class="flex flex-wrap items-center justify-center gap-x-8 gap-y-2" aria-label="Footer">
-        <a class="text-sm text-white/65 transition hover:text-white" href="resources.html">Terms of Service</a>
-        <a class="text-sm text-white/65 transition hover:text-white" href="resources.html">Privacy Policy</a>
-        <a class="text-sm text-white/65 transition hover:text-white" href="resources.html">Cookies</a>
-      </nav>
-      <small class="text-sm text-white/55">&copy; 2026 Technumen Inc. All rights reserved.</small>
+
+  <section class="trust-bar" aria-label="Certifications and appraisals">
+    <div class="trust-bar-inner">
+      <ul>
+        <li>
+          <span class="trust-badge"><img src="images/badge-soc2.png" alt="CMMI Appraised, Maturity Level 3" loading="lazy" /></span>
+          <span class="trust-text"><strong>CMMI SVC Level 3 Appraised</strong>Appraisal #69959 &middot; Expires March 18, 2027</span>
+        </li>
+        <li>
+          <span class="trust-badge"><img src="images/badge-cmmi.png" alt="AICPA SOC 2 Type 2" loading="lazy" /></span>
+          <span class="trust-text"><strong>SOC 2 Type 2 Certified</strong>Security, Availability &amp; Confidentiality Audited</span>
+        </li>
+        <li>
+          <span class="trust-badge"><img src="images/badge-iso.jpg" alt="TÜV Rheinland ISO/IEC 27001:2022 Certified" loading="lazy" /></span>
+          <span class="trust-text"><strong>ISO/IEC 27001:2022 Certified</strong>TÜV Rheinland Certified Management System &middot; ID 9000028215</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer class="site-footer mt-auto border-t border-white/10 bg-[#0a1010]">
+    <div class="mx-auto w-[min(1744px,calc(100%-120px))] max-[960px]:w-[calc(100%-48px)]">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Technumen home"><img src="images/technumen-logo.png" alt="Technumen" /></a>
+          <p>AI-native digital engineering for enterprises that compete on speed. We modernize core systems, secure what matters, and turn data into decisions &mdash; built for regulated industries where getting it right the first time isn’t optional.</p>
+        </div>
+        <nav class="footer-col" aria-label="Services">
+          <h2>Services</h2>
+        <a href="service-digital-engineering.html">Digital Applications</a>
+        <a href="service-cloud.html">Cloud Transformation</a>
+        <a href="service-data.html">Advanced Analytics</a>
+        <a href="service-quality.html">Quality Engineering</a>
+        <a href="service-security.html">Cyber Security</a>
+        <a href="guidewire.html">Guidewire &amp; Insurance</a>
+        </nav>
+        <nav class="footer-col" aria-label="Company">
+          <h2>Company</h2>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="careers.html">Careers</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+        </nav>
+        <div class="footer-col">
+          <h2>Get in Touch</h2>
+          <a href="tel:+17325950962">+1 (732) 595-0962</a>
+          <a href="mailto:info@technumen.com">info@technumen.com</a>
+          <p class="footer-locations">USA (New Jersey)<br />India (Hyderabad)<br />Costa Rica (San José)</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <nav aria-label="Legal">
+          <a href="terms.html">Terms of Service</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="cookies.html">Cookies</a>
+        </nav>
+        <small>&copy; 2026 Technumen Inc. All rights reserved.</small>
+      </div>
     </div>
   </footer>
+
   <script type="module" src="script.js"></script>
   <script type="module" src="content-pages.js"></script>
 </body>
