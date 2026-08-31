@@ -1,3 +1,7 @@
+import badgeCmmiFile from "./images/badge-cmmi.png";
+import badgeSoc2File from "./images/badge-soc2.png";
+import badgeIsoFile from "./images/badge-iso.jpg";
+
 const pages = {
   "about.html": {
     eyebrow: "About Us",
@@ -344,9 +348,9 @@ const pages = {
         title: "Our Security & Compliance Heritage",
         body: "Built on a foundation of global best practices, rigorous audits, and continuous security improvement.",
         cards: [
-          ["CMMI SVC Level 3", "Appraisal #69959 | Expiration: March 18, 2027.", "", "images/badge-soc2.png"],
-          ["SOC 2 Type 2", "AICPA SOC 2 Type II — Security, Availability & Confidentiality Audited. Report available on request under NDA.", "", "images/badge-cmmi.png"],
-          ["ISO/IEC 27001:2022", "TÜV Rheinland Certified Management System | ID 9000028215.", "", "images/badge-iso.jpg"]
+          ["CMMI SVC Level 3", "Appraisal #69959 | Expiration: March 18, 2027.", "", badgeSoc2File],
+          ["SOC 2 Type 2", "AICPA SOC 2 Type II — Security, Availability & Confidentiality Audited. Report available on request under NDA.", "", badgeCmmiFile],
+          ["ISO/IEC 27001:2022", "TÜV Rheinland Certified Management System | ID 9000028215.", "", badgeIsoFile]
         ]
       },
       {
