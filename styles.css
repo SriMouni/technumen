@@ -984,23 +984,9 @@
   line-height: 1.67 !important;
 }
 
-.home-page #domains > div:first-child > div:last-child {
-  min-height: 390px;
-  border-radius: 5px;
-  background:
-    radial-gradient(ellipse at 48% 38%, rgba(40, 234, 243, 0.14), transparent 23rem),
-    linear-gradient(135deg, #1e2b21 0%, #263329 54%, #1a2119 100%);
-  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.18);
-    padding: 30px 38px 36px;
-}
 
-.home-page #domains > div:first-child > div:last-child > h2 {
-  color: rgba(228, 236, 232, 0.68);
-  font-size: 18px;
-  font-weight: 300;
-    margin-bottom: 32px;
-    line-height: 1.35;
-}
+
+
 
 .home-page #domains > div:last-child {
   margin-bottom: 70px;
@@ -2730,4 +2716,36 @@
 }
 @media (max-width: 960px) {
   .header-tagline { display: none; }
+}
+
+/*  CLAIMS DASHBOARD PANEL
+    Replaces the hand-built mock browser that shipped with the template. The
+    panel keeps the gradient surround; the screenshot sits inside it.  */
+.claims-panel {
+  padding: 30px 34px 34px;
+  border-radius: 6px;
+  box-shadow: 0 24px 90px rgba(0, 0, 0, 0.22);
+}
+
+.claims-panel-title {
+  margin: 0 0 22px;
+  color: rgba(228, 236, 232, 0.68);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.35;
+  letter-spacing: -0.09px;
+}
+
+.claims-dashboard {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.32);
+}
+
+@media (max-width: 760px) {
+  .claims-panel { padding: 20px 18px 22px; }
+  .claims-panel-title { margin-bottom: 16px; font-size: 16px; }
 }
