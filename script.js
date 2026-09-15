@@ -76,3 +76,18 @@ if (canvas && ctx) {
 
   requestAnimationFrame(drawSystem);
 }
+
+
+// A job post can be linked to directly, e.g. careers.html#lm-off26-n110 —
+// open that posting and bring it into view.
+function openJobFromHash() {
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (!id) return;
+  const el = document.getElementById(id);
+  if (el && el.tagName === "DETAILS") {
+    el.open = true;
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+window.addEventListener("hashchange", openJobFromHash);
+openJobFromHash();

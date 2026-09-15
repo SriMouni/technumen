@@ -100,7 +100,7 @@ const SEO = {
   ],
   "careers.html": [
     "Careers at Technumen | IT Consulting Jobs in US, India & Costa Rica",
-    "Join a global network of consultants. Open roles in Guidewire, data engineering, AI/MLOps and cloud security across the US, India and Costa Rica.",
+    "Current openings: Full Stack Developer (Java 17/21 and React), Senior Guidewire PolicyCenter Developer, and Guidewire QA Lead. Apply to jobs@technumen.com.",
   ],
   "resources.html": [
     "Trust Center | CMMI Level 3, SOC 2 Type 2 & ISO 27001 | Technumen",

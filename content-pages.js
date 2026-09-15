@@ -328,11 +328,262 @@ const pages = {
       {
         label: "Open Roles",
         title: "Featured Open Positions",
-        cards: [
-          ["Guidewire Integration Architect", "Full-Time | US / Remote / Hyderabad — PolicyCenter/ClaimCenter, Java/Spring Boot, REST APIs, GWCP."],
-          ["Lead Data Lakehouse Engineer", "Full-Time | Hyderabad / Hybrid — Snowflake, Databricks, Apache Kafka, CDE Data Governance pipelines."],
-          ["Senior AI / MLOps Engineer", "Full-Time | Hybrid — Enterprise LLM integration, Python, LangChain, Kubernetes MLOps deployment."],
-          ["Cloud & DevSecOps Principal", "Full-Time | US / Costa Rica — AWS/Azure landing zones, Terraform IaC, CSPM, and automated CI/CD security."]
+        jobs: [
+          {
+            "anchor": "lm-off26-n110",
+            "jobId": "LM-OFF26-N110",
+            "title": "Full Stack Developer – Java 17/21 & React",
+            "experience": "6+ Years",
+            "location": "Offshore",
+            "joining": "Immediate / Short Notice Preferred",
+            "summary": "We are looking for an experienced Full Stack Developer with strong hands-on expertise in Java 17/21, Spring Boot, Spring Security, Microservices, React.js, and TypeScript. The ideal candidate should have experience building scalable full-stack applications and RESTful microservices, along with good knowledge of Hibernate/JPA, Apache Kafka, AWS, UI development, testing, monitoring, and CI/CD practices.",
+            "groups": [
+              [
+                "Key Responsibilities",
+                [
+                  "Design, develop, and maintain scalable full-stack applications using Java, Spring Boot, React.js, and TypeScript.",
+                  "Develop and maintain RESTful APIs and Microservices using Spring Boot.",
+                  "Implement authentication and authorization using Spring Security 6.",
+                  "Build responsive, reusable, and user-friendly UI components using React.js and TypeScript.",
+                  "Integrate React applications with backend REST APIs.",
+                  "Develop data-access layers using Hibernate/JPA.",
+                  "Implement Apache Kafka for event-driven communication.",
+                  "Design and maintain applications following Microservices architecture.",
+                  "Work with AWS services and support cloud-based deployments.",
+                  "Develop unit and integration tests using JUnit and Mockito.",
+                  "Perform API testing, debugging, troubleshooting, and performance optimization.",
+                  "Participate in code reviews and follow established coding and quality standards.",
+                  "Collaborate with business, QA, DevOps, and other technical teams throughout the SDLC."
+                ]
+              ],
+              [
+                "Required Technical Skills — Backend",
+                [
+                  "Strong hands-on experience with Java 17/21.",
+                  "Strong experience with Spring Boot 3.x+.",
+                  "Strong understanding of Spring Security 6.",
+                  "Experience developing REST APIs.",
+                  "Strong understanding of Microservices architecture.",
+                  "Hands-on experience with Hibernate/JPA.",
+                  "Good knowledge of SQL and relational databases."
+                ]
+              ],
+              [
+                "Frontend / UI",
+                [
+                  "Strong hands-on experience with React.js.",
+                  "Good experience with TypeScript.",
+                  "Strong knowledge of JavaScript, HTML5, and CSS3.",
+                  "Experience developing responsive and reusable UI components.",
+                  "Good understanding of React Hooks and state management.",
+                  "Understanding of UI/UX principles and responsive design.",
+                  "Experience integrating REST APIs with React applications."
+                ]
+              ],
+              [
+                "Messaging & Cloud",
+                [
+                  "Basic knowledge of Apache Kafka and event-driven architecture.",
+                  "Basic knowledge of AWS services.",
+                  "Understanding of cloud-based application deployment."
+                ]
+              ],
+              [
+                "Node.js",
+                [
+                  "Basic knowledge of Node.js.",
+                  "Understanding of Node.js for frontend tooling or basic backend services is a plus."
+                ]
+              ],
+              [
+                "Testing",
+                [
+                  "Good understanding of Unit Testing and Integration Testing.",
+                  "Hands-on experience with JUnit and Mockito.",
+                  "Knowledge of REST API testing.",
+                  "Basic understanding of React component testing.",
+                  "Strong debugging and troubleshooting skills."
+                ]
+              ],
+              [
+                "Tools & Development Practices",
+                [
+                  "Git and GitHub Actions.",
+                  "Experience working in Agile/Scrum environments."
+                ]
+              ]
+            ]
+          },
+          {
+            "anchor": "lm-off26-n109",
+            "jobId": "LM-OFF26-N109",
+            "title": "Sr Guidewire Developer",
+            "experience": "6+ Years",
+            "location": "Offshore",
+            "joining": "Immediate / Short Notice Preferred",
+            "summary": "We are looking for an experienced Guidewire PolicyCenter Developer with 6–10 years of experience and strong hands-on expertise in PolicyCenter configuration, data migration, integrations, and version upgrades. The ideal candidate should have experience working on Property & Casualty (P&C) insurance applications, particularly Personal Lines and Commercial Lines, with strong knowledge of PolicyCenter configuration, transaction lifecycles, Product Model, PCF, integrations, and migration processes. Experience with Guidewire PolicyCenter V9/V10 upgrades and Book of Business migration will be highly preferred.",
+            "groups": [
+              [
+                "Guidewire PolicyCenter Configuration",
+                [
+                  "Perform hands-on configuration and development in Guidewire PolicyCenter.",
+                  "Configure and enhance the Product Model, PCF Screens, Data Model, Forms, Underwriting Rules, Transactions, and Validation Rules.",
+                  "Translate business requirements into scalable PolicyCenter configurations.",
+                  "Support enhancements to Personal Lines and Commercial Lines insurance products.",
+                  "Collaborate with business analysts, QA, integration teams, and other stakeholders."
+                ]
+              ],
+              [
+                "Book of Business / Data Migration",
+                [
+                  "Design and implement PolicyCenter data migration solutions for Book of Business migration.",
+                  "Develop custom migration frameworks to extract, transform, validate, and transfer policy data between legacy and target systems.",
+                  "Implement migration processes across multiple Lines of Business (LOBs).",
+                  "Design custom Migration transaction lifecycles and related PolicyCenter configurations.",
+                  "Handle policies that are in progress, completed, leaving the book, or failed and stuck during migration.",
+                  "Develop mechanisms for failure detection, recovery, and transaction retry.",
+                  "Ensure data integrity and consistency throughout the migration lifecycle.",
+                  "Define and implement appropriate handling of policy edits and changes during migration."
+                ]
+              ],
+              [
+                "Guidewire Upgrade",
+                [
+                  "Participate in Guidewire PolicyCenter version upgrades, preferably V9 to V10 or similar.",
+                  "Perform code refactoring and configuration updates required for platform compatibility.",
+                  "Analyze and resolve upgrade-related defects and compatibility issues.",
+                  "Support unit testing, integration testing, regression testing, and defect resolution."
+                ]
+              ],
+              [
+                "Integration Development",
+                [
+                  "Develop and maintain integrations between PolicyCenter and downstream/upstream systems.",
+                  "Work with REST/SOAP APIs, messaging, batch processes, and other integration mechanisms.",
+                  "Troubleshoot integration failures and transaction issues.",
+                  "Ensure reliable data transfer between PolicyCenter and external systems."
+                ]
+              ],
+              [
+                "Production Support & Troubleshooting",
+                [
+                  "Investigate complex technical issues across PolicyCenter configurations, integrations, and migration processes.",
+                  "Perform detailed Root Cause Analysis (RCA) for production and non-production issues.",
+                  "Identify failed or stuck transactions and implement corrective solutions.",
+                  "Provide permanent fixes for recurring technical issues.",
+                  "Work closely with support and engineering teams to resolve critical issues."
+                ]
+              ],
+              [
+                "Required Skills",
+                [
+                  "6–10 years of IT experience with strong Guidewire experience.",
+                  "Strong hands-on experience with Guidewire PolicyCenter.",
+                  "Experience in PolicyCenter configuration and development.",
+                  "Strong knowledge of Product Model, PCF, Data Model, Forms, Underwriting Rules, Transactions, and Gosu.",
+                  "Hands-on experience with Book of Business / Policy Data Migration.",
+                  "Experience designing custom migration processes and transaction lifecycles.",
+                  "Experience working across multiple P&C Lines of Business.",
+                  "Experience with Personal Lines and/or Commercial Lines.",
+                  "Experience with Guidewire PolicyCenter upgrades, preferably V9 to V10.",
+                  "Strong experience with REST/SOAP integrations, Messaging, and Batch Processing.",
+                  "Strong debugging and troubleshooting skills.",
+                  "Good understanding of SQL and database concepts.",
+                  "Experience working in Agile/Kanban environments."
+                ]
+              ]
+            ]
+          },
+          {
+            "anchor": "ginv-on26-n103",
+            "jobId": "GINV-ON26-N103",
+            "title": "Guidewire QA Lead",
+            "experience": "8+ Years",
+            "location": "Onshore",
+            "joining": "Immediate / Short Notice Preferred",
+            "summary": "We are looking for an experienced Guidewire QA Lead with strong expertise in Guidewire PolicyCenter, BillingCenter, and/or ClaimCenter testing. The candidate will lead QA activities across Guidewire implementations, integrations, upgrades, and production releases, ensuring high-quality delivery through effective test strategy, automation, defect management, and team leadership.",
+            "groups": [
+              [
+                "Key Responsibilities",
+                [
+                  "Lead the QA strategy, planning, execution, and delivery for Guidewire projects.",
+                  "Provide technical leadership to QA engineers and coordinate testing activities across multiple teams.",
+                  "Develop Test Strategy, Test Plans, Test Scenarios, Test Cases, and Traceability Matrix.",
+                  "Perform functional, integration, regression, system, end-to-end, and UAT testing.",
+                  "Strong hands-on experience testing Guidewire PolicyCenter / BillingCenter / ClaimCenter.",
+                  "Validate Guidewire configurations, workflows, business rules, transactions, screens, and integrations.",
+                  "Test Guidewire APIs, REST/SOAP services, messaging, and external system integrations.",
+                  "Validate data flows and perform database/backend testing using SQL.",
+                  "Lead defect identification, triage, root-cause analysis, prioritization, and resolution.",
+                  "Work closely with Business Analysts, Guidewire Developers, Product Owners, and Business stakeholders.",
+                  "Define QA metrics and provide testing status, risks, issues, and release-readiness reports.",
+                  "Review test cases and automation scripts developed by QA engineers.",
+                  "Identify opportunities for test automation and continuous improvement.",
+                  "Support CI/CD testing and integration with tools such as Jenkins/GitLab.",
+                  "Participate in Agile ceremonies including Sprint Planning, Backlog Refinement, Daily Scrum, Sprint Review, and Retrospective.",
+                  "Mentor QA team members and establish QA best practices, standards, and processes.",
+                  "Support production releases, smoke testing, and post-production validation."
+                ]
+              ],
+              [
+                "Required Skills",
+                [
+                  "8+ years of QA/testing experience, with strong experience in Guidewire.",
+                  "5+ years of Guidewire testing experience preferred.",
+                  "Strong expertise in one or more of Guidewire PolicyCenter, BillingCenter, or ClaimCenter.",
+                  "Experience with Guidewire Cloud is highly preferred.",
+                  "Strong understanding of Guidewire configuration, business rules, workflows, transactions, and integrations.",
+                  "Strong knowledge of API testing – REST/SOAP.",
+                  "Strong SQL/database testing skills.",
+                  "Experience with Agile/Scrum methodologies.",
+                  "Hands-on experience with defect management tools such as JIRA.",
+                  "Knowledge of Postman, SOAP UI, Jenkins/GitLab, Splunk or similar tools.",
+                  "Experience with test automation frameworks such as Selenium, Playwright, Cypress, or similar is preferred.",
+                  "Strong analytical, communication, leadership, and problem-solving skills."
+                ]
+              ],
+              [
+                "Guidewire-Specific Testing",
+                [
+                  "Policy lifecycle and transactions.",
+                  "New Business, Renewal, Cancellation, Rewrite, Reinstatement.",
+                  "Rating and underwriting rules.",
+                  "Product model and policy changes.",
+                  "Billing and payment transactions.",
+                  "Claims lifecycle and financial transactions.",
+                  "Guidewire PCF/UI functionality.",
+                  "Workflows and business rules.",
+                  "Batch processes.",
+                  "Guidewire APIs and integrations, external system integrations, and event/messaging-based integrations.",
+                  "Data migration and reconciliation.",
+                  "Guidewire Cloud releases and deployments."
+                ]
+              ],
+              [
+                "Leadership Expectations",
+                [
+                  "Lead a team of QA engineers and manage testing deliverables.",
+                  "Conduct code/test-case reviews and quality assessments.",
+                  "Establish QA standards and reusable testing frameworks.",
+                  "Identify project risks and provide mitigation strategies.",
+                  "Drive defect prevention and continuous quality improvement.",
+                  "Communicate effectively with technical and business stakeholders.",
+                  "Ensure testing is completed within scope, timeline, and quality objectives."
+                ]
+              ],
+              [
+                "Preferred Qualifications",
+                [
+                  "Guidewire certification is a plus.",
+                  "Experience with Guidewire Cloud Platform.",
+                  "Experience in Insurance domain, especially P&C Insurance.",
+                  "Knowledge of ACORD, insurance policy lifecycle, rating, billing, and claims processes.",
+                  "Experience with CI/CD and DevOps practices.",
+                  "Experience working on large-scale Guidewire implementations or upgrades."
+                ]
+              ]
+            ]
+          }
         ]
       }
     ],
@@ -597,13 +848,13 @@ const linkify = (text = "") => text
   .replace(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g, '<a class="inline-link" href="mailto:$1">$1</a>')
   .replace(/(?<!["\d>-])(\d{3}-\d{3}-\d{4})(?![\d<])/g, '<a class="inline-link" href="tel:+1$1">$1</a>');
 
-const cardMarkup = (cards = []) => cards.map(([title, body, href, img], index) => `
+const cardMarkup = (cards = []) => cards.map(([title, body, href, img, linkLabel], index) => `
   <article class="${view.contentCard}" style="--motion-order:${index}">
     <span class="content-card-sheen" aria-hidden="true"></span>
     ${img ? `<span class="card-badge"><img src="${img}" alt="" aria-hidden="true" loading="lazy" /></span>` : ""}
     <h3 class="${view.contentTitle}">${title}</h3>
     <p class="${view.contentBody}">${linkify(body)}</p>
-    ${href ? `<a class="${view.contentLink}" href="${href}">Explore</a>` : ""}
+    ${href ? `<a class="${view.contentLink}" href="${href}">${linkLabel || "Explore"}</a>` : ""}
   </article>
 `).join("");
 
@@ -617,6 +868,32 @@ const bulletsMarkup = (bullets = []) => bullets.length ? `
   <ul class="page-bullets">
     ${bullets.map(item => `<li>${item}</li>`).join("")}
   </ul>
+` : "";
+
+const jobsMarkup = (jobs = []) => jobs.length ? `
+  <div class="job-list">
+    ${jobs.map(job => `
+      <details class="job" id="${job.anchor}">
+        <summary class="job-head">
+          <span>
+            <strong class="job-title">${job.title}</strong>
+            <span class="job-meta">${job.jobId} &middot; ${job.experience} &middot; ${job.location} &middot; ${job.joining}</span>
+          </span>
+          <span class="job-toggle" aria-hidden="true"></span>
+        </summary>
+        <div class="job-body">
+          <p class="job-summary">${job.summary}</p>
+          ${job.groups.map(([heading, items]) => `
+            <div class="job-group">
+              <h4>${heading}</h4>
+              <ul>${items.map(i => `<li>${i}</li>`).join("")}</ul>
+            </div>
+          `).join("")}
+          <a class="job-apply" href="mailto:jobs@technumen.com?subject=${encodeURIComponent("Application - " + job.title + " (" + job.jobId + ")")}">Apply for this role</a>
+        </div>
+      </details>
+    `).join("")}
+  </div>
 ` : "";
 
 const quoteMarkup = (section) => section.quote ? `
@@ -647,6 +924,7 @@ document.querySelector("[data-page-root]").innerHTML = `
         ${quoteMarkup(section)}
         ${statsMarkup(section.stats)}
         ${bulletsMarkup(section.bullets)}
+        ${jobsMarkup(section.jobs)}
         ${section.cards ? `<div class="${view.contentGrid}">${cardMarkup(section.cards)}</div>` : ""}
       </div>
     </section>
