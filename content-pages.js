@@ -332,6 +332,7 @@ const pages = {
           {
             "anchor": "lm-off26-n110",
             "jobId": "LM-OFF26-N110",
+        "applyUrl": "https://technumen.keka.com/careers/jobdetails/87324",
             "title": "Full Stack Developer – Java 17/21 & React",
             "experience": "6+ Years",
             "location": "Offshore",
@@ -417,6 +418,7 @@ const pages = {
           {
             "anchor": "lm-off26-n109",
             "jobId": "LM-OFF26-N109",
+        "applyUrl": "https://technumen.keka.com/careers/jobdetails/82453",
             "title": "Sr Guidewire Developer",
             "experience": "6+ Years",
             "location": "Offshore",
@@ -497,6 +499,7 @@ const pages = {
           {
             "anchor": "ginv-on26-n103",
             "jobId": "GINV-ON26-N103",
+        "applyUrl": "https://technumen.keka.com/careers/jobdetails/81037",
             "title": "Guidewire QA Lead",
             "experience": "8+ Years",
             "location": "Onshore",
@@ -889,7 +892,9 @@ const jobsMarkup = (jobs = []) => jobs.length ? `
               <ul>${items.map(i => `<li>${i}</li>`).join("")}</ul>
             </div>
           `).join("")}
-          <a class="job-apply" href="mailto:jobs@technumen.com?subject=${encodeURIComponent("Application - " + job.title + " (" + job.jobId + ")")}">Apply for this role</a>
+          ${job.applyUrl
+            ? `<a class="job-apply" href="${job.applyUrl}" target="_blank" rel="noopener">Apply for this role</a>`
+            : `<a class="job-apply" href="mailto:jobs@technumen.com?subject=${encodeURIComponent("Application - " + job.title + " (" + job.jobId + ")")}">Apply for this role</a>`}
         </div>
       </details>
     `).join("")}
