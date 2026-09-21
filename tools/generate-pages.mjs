@@ -63,8 +63,8 @@ const renderBody = new Function(
    rather than a truncated intro. Keep descriptions inside ~155 characters. */
 const SEO = {
   "about.html": [
-    "About Technumen | AI-Native IT & Business Consulting Since 2016",
-    "An AI-native IT and business consulting firm founded in 2016. Insights-driven, outcome-based delivery across 3 global centres and 1,500+ technical experts.",
+    "About Technumen | AI-Native IT & Business Consulting Since 2012",
+    "An AI-native IT and business consulting firm founded in 2012. Insights-driven, outcome-based delivery across 3 global centres and 1,500+ technical experts.",
   ],
   "services.html": [
     "Services | AI, Cloud, Data, Quality & Cyber Security | Technumen",
@@ -153,8 +153,10 @@ function head(file, title, description) {
 }
 
 /* ------------------------------------------------------------------ chrome -- */
-/* header, trust bar and footer come from an existing page so the shared
-   chrome stays identical everywhere */
+/* Header, trust bar and footer come from an existing page so the shared
+   chrome stays identical everywhere.
+   NOTE: about.html is itself generated, so this reads the previous run's
+   output. The blank-line collapse below keeps that from compounding. */
 const shell = fs.readFileSync(path.join(ROOT, "about.html"), "utf8");
 const bodyOpen = shell.slice(shell.indexOf("<body"), shell.indexOf("  <main"));
 const afterMain = shell.slice(shell.indexOf("</main>") + "</main>".length);
@@ -173,7 +175,8 @@ for (const [file, page] of Object.entries(pages)) {
   const html = head(file, seo[0], seo[1]) + "\n" + bodyOpen +
     "  <main>" + body + "  </main>\n" + chromeTail;
 
-  fs.writeFileSync(path.join(ROOT, file), html);
+  // collapse runs of blank lines so repeated runs produce identical output
+  fs.writeFileSync(path.join(ROOT, file), html.replace(/\n{3,}/g, "\n\n"));
   report.push(file.padEnd(34) + (html.length / 1024).toFixed(1) + " KB   " + seo[0].slice(0, 46));
 }
 console.log(report.join("\n"));

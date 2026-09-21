@@ -5,18 +5,18 @@ import badgeIsoFile from "./images/badge-iso.jpg";
 const pages = {
   "about.html": {
     eyebrow: "About Us",
-    title: "Built for the AI Epoch, Grounded in 2016",
+    title: "Built for the AI Epoch, Grounded in 2012",
     intro: "Technumen is an AI-native IT and business consulting firm. We're insights-driven and outcome-based — every engagement is judged on the return it delivers, not the hours it takes.",
     sections: [
       {
         label: "About Us",
         title: "Technology consulting built on integrity and innovation",
-        body: "We've spent nearly a decade helping enterprises turn digital transformation from a buzzword into measurable outcomes — bridging legacy core systems with the intelligent, scalable platforms the AI era demands. Since 2016, that specialization has meant one thing consistently: results our clients can point to."
+        body: "We've spent more than a decade helping enterprises turn digital transformation from a buzzword into measurable outcomes — bridging legacy core systems with the intelligent, scalable platforms the AI era demands. Since 2012, that specialization has meant one thing consistently: results our clients can point to."
       },
       {
         label: "Mission and Vision",
         title: "The core of business transformation, built on eternal principles",
-        stats: [["2016", "Established"], ["1,500+", "People"], ["50+", "Customers"], ["3", "Global Delivery Centers"]],
+        stats: [["2012", "Established"], ["1,500+", "People"], ["50+", "Customers"], ["3", "Global Delivery Centers"]],
         cards: [
           ["Our Mission", "To be the core of business transformation with eternal principles. Our mission is to be the world leader in Digital Transformation and help businesses leverage technological advancements while providing maximum value."],
           ["Our Vision", "To be the premier global technology partner recognized for engineering excellence, zero-defect quality, and integrity in transforming complex enterprise legacy architectures into future-ready intelligent platforms."]
@@ -25,7 +25,7 @@ const pages = {
       {
         label: "Founder's Note",
         title: "Why we built Technumen",
-        quote: "When we founded Technumen in 2016, enterprise IT was caught between legacy inertia and rapid digital disruption. Our mission was simple: build a consultancy anchored in uncompromising integrity, deep engineering rigor, and client partnerships that last a lifetime. As we lead the transition into the AI epoch, we continue to bridge complex core architectures with intelligent, scalable systems that turn our clients' digital investments into durable competitive advantages.",
+        quote: "When we founded Technumen in 2012, enterprise IT was caught between legacy inertia and rapid digital disruption. Our mission was simple: build a consultancy anchored in uncompromising integrity, deep engineering rigor, and client partnerships that last a lifetime. As we lead the transition into the AI epoch, we continue to bridge complex core architectures with intelligent, scalable systems that turn our clients' digital investments into durable competitive advantages.",
         attribution: "Executive Leadership Team, Technumen"
       },
       {
