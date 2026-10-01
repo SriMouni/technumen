@@ -5,28 +5,36 @@ import badgeIsoFile from "./images/badge-iso.jpg";
 const pages = {
   "about.html": {
     eyebrow: "About Us",
-    title: "Built for the AI Epoch, Grounded in 2012",
-    intro: "Technumen is an AI-native IT and business consulting firm. We're insights-driven and outcome-based — every engagement is judged on the return it delivers, not the hours it takes.",
+    title: "AI-Ready. Enterprise-Proven.",
+    intro: "Since 2012, Technumen has partnered with global enterprises to solve complex technology challenges and deliver meaningful business outcomes.",
     sections: [
       {
         label: "About Us",
         title: "Technology consulting built on integrity and innovation",
-        body: "We've spent more than a decade helping enterprises turn digital transformation from a buzzword into measurable outcomes — bridging legacy core systems with the intelligent, scalable platforms the AI era demands. Since 2012, that specialization has meant one thing consistently: results our clients can point to."
-      },
-      {
-        label: "Mission and Vision",
-        title: "The core of business transformation, built on eternal principles",
-        stats: [["2012", "Established"], ["1,500+", "People"], ["50+", "Customers"], ["3", "Global Delivery Centers"]],
-        cards: [
-          ["Our Mission", "To be the core of business transformation with eternal principles. Our mission is to be the world leader in Digital Transformation and help businesses leverage technological advancements while providing maximum value."],
-          ["Our Vision", "To be the premier global technology partner recognized for engineering excellence, zero-defect quality, and integrity in transforming complex enterprise legacy architectures into future-ready intelligent platforms."]
+        paras: [
+          "We combine deep engineering expertise with capabilities across AI, data, cloud, digital engineering and quality engineering. Our teams help enterprises modernize technology, build and scale digital products, accelerate AI adoption, and enhance the quality, reliability, and performance of mission-critical platforms.",
+          "We operate as a long-term technology partner, combining domain expertise, engineering excellence, accountability and delivery discipline to help enterprises transform and deliver at scale."
         ]
       },
       {
-        label: "Founder's Note",
-        title: "Why we built Technumen",
-        quote: "When we founded Technumen in 2012, enterprise IT was caught between legacy inertia and rapid digital disruption. Our mission was simple: build a consultancy anchored in uncompromising integrity, deep engineering rigor, and client partnerships that last a lifetime. As we lead the transition into the AI epoch, we continue to bridge complex core architectures with intelligent, scalable systems that turn our clients' digital investments into durable competitive advantages.",
-        attribution: "Executive Leadership Team, Technumen"
+        label: "Mission and Vision",
+        title: "Where we are going, and how we get there",
+        stats: [["2012", "Established"], ["1,500+", "People"], ["50+", "Customers"], ["3", "Global Delivery Centers"]],
+        cards: [
+          ["Our Vision", "To be a trusted technology partner helping enterprises shape the future."],
+          ["Our Mission", "To help enterprises solve complex challenges, accelerate modernization, and create lasting business value through AI, data, and engineering."]
+        ]
+      },
+      {
+        label: "Our Story",
+        title: "Why We Built Technumen",
+        paras: [
+          "Technumen was founded in 2012 with a simple belief: enterprises need technology partners who understand their business, solve complex problems and take ownership of outcomes.",
+          "We built Technumen around strong engineering, trusted relationships and disciplined delivery. Over the years, we've helped enterprises modernize applications, build data platforms, move to the cloud, engineer digital products and improve the quality, security, and performance of critical technology.",
+          "Today, AI is transforming how technology is built, operated, and delivered. We believe AI should not exist as a standalone service alongside traditional technology capabilities. It should be embedded into the way modern technology is engineered.",
+          "That's why we are making Technumen AI-ready across our services — using AI to help our clients build smarter products, modernize faster, unlock greater value from data, and engineer higher-quality technology.",
+          "Technology will continue to evolve. Our commitment to understanding the right problem, engineering the right solution, and delivering outcomes that work will remain at the heart of Technumen."
+        ]
       },
       {
         label: "What Drives Us",
@@ -39,35 +47,204 @@ const pages = {
           ["Client for Life", "We dedicate ourselves as a trusted partner, building relationships that last beyond individual deliverables."],
           ["Work With Integrity", "We uphold integrity in every action without compromising quality."]
         ]
+      },
+      {
+        label: "Leadership",
+        title: "Experience. Perspective. Leadership.",
+        body: "Technumen is led by a team of experienced technology and business leaders who bring together deep industry knowledge, engineering expertise and diverse perspectives. Our leadership team works closely with our clients and our people to turn complex challenges into practical outcomes, build trusted partnerships, and continuously strengthen our capabilities for what's next.",
+        people: [
+          ["Srikanth Arutla", "Chief Executive Officer"],
+          ["Gurrala Sunil Chandra Reddy", "Chief Financial Officer"],
+          ["Mallik Miryala", "Chief Operating Officer"],
+          ["Vasanthi Penagulur", "Sr. VP – Strategic Partnerships"],
+          ["Durga Mishra", "Chief Security Officer"]
+        ]
+      },
+      {
+        label: "Women in Leadership",
+        title: "Leadership that reflects diverse perspectives.",
+        body: "Women play an important role in leadership at Technumen, contributing across technology, business, operations, customer relationships and organizational growth. We are committed to creating an inclusive environment where talented people have the opportunity to grow, take on leadership responsibilities and make a meaningful impact.",
+        people: [
+          ["Vasanthi Penagulur", "Sr. VP – Strategic Partnerships"],
+          ["Revathy Kakani", "Global Delivery Head – Strategic Accounts"],
+          ["Elissa Bedamatta", "Global HR Head"],
+          ["Jayaprada Ravula", "HR Business Partner – USA"],
+          ["Swetha Komatwar", "Account Manager"],
+          ["Sindhura Mettu", "Sr Program Manager"],
+          ["Chandana Namburi", "Sr Program Manager"]
+        ]
+      },
+      {
+        label: "How We Lead",
+        title: "Our Leadership Principles",
+        cards: [
+          ["Customer First", "We listen deeply, understand the business context, and take ownership of outcomes — not just deliverables."],
+          ["Engineering Excellence", "We apply strong engineering practices, technical depth, and disciplined execution to build technology that is reliable, scalable, and built to last."],
+          ["Continuous Innovation", "We embrace emerging technologies, including AI, when they can solve real problems, improve outcomes, and create lasting value."],
+          ["People & Collaboration", "We build high-performing teams where diverse experiences, perspectives, and ideas are valued — and where people succeed together."],
+          ["Accountability", "We take responsibility for our commitments, our decisions, and the outcomes we deliver for our clients and our people."]
+        ]
       }
     ],
     cta: ["Partner with Technumen", "From strategy to execution, we bring commitment for excellence and integrity to every engagement.", "Contact Us"]
   },
   "services.html": {
     eyebrow: "Our Services",
-    title: "Six Disciplines. One AI-Native Approach.",
-    intro: "Every service line below is built around the same core belief: AI should change what's possible, not just what's automated. From core insurance systems to cloud infrastructure, here's where we go deep.",
+    title: "Technology Services. AI-Ready by Design.",
+    intro: "Technology is evolving rapidly, and AI is reshaping how enterprises build, modernize, operate, and grow. Technumen brings together deep engineering expertise across AI, data, cloud, digital engineering, quality engineering, and cybersecurity to help enterprises build new products, modernize technology landscapes, and solve complex business and technology challenges. AI is not a separate service at Technumen — it is becoming an integral part of how we engineer, modernize, test, secure, and operate technology.",
     sections: [
+      /* OVERVIEW GRID — commented out: it repeated the six discipline
+         sections below, each of which links to its own detail page.
+         Remove this comment wrapper to restore it.
       {
         label: "Our Capabilities",
-        title: "Technology Services",
-        body: "From digital applications to cybersecurity, we deliver end-to-end technology consulting services.",
+        title: "Six disciplines, engineered to work together",
+        body: "End-to-end engineering capabilities tailored for complex enterprise ecosystems. Each discipline is detailed below.",
         cards: [
-          ["Digital Applications", "Software Products and Digital Engineering covering application development, modernization, enterprise architecture, DevOps, and agile methodologies.", "service-digital-engineering.html"],
-          ["Cloud Transformation", "Cloud assessment, migration, cloud-native development, and 24/7 operations management for resilient infrastructure.", "service-cloud.html"],
-          ["Advanced Analytics", "Data platform engineering, critical data element identification, and governance frameworks for actionable intelligence.", "service-data.html"],
-          ["Quality Engineering", "AI-powered testing, intelligent automation, BIDW test automation, and comprehensive test management services.", "service-quality.html"],
-          ["Cyber Security", "Cloud security, product security, GRC, IAM, and managed detection and response for enterprise protection.", "service-security.html"],
-          ["Guidewire & Insurance", "Guidewire-led core transformation, digital customer experience, and new product development for P&C insurance.", "guidewire.html"]
+          ["Digital Engineering", "Build and modernize digital products, applications and platforms with AI-enabled engineering.", "service-digital-engineering.html"],
+          ["Data & AI", "Build trusted data foundations and intelligent solutions that turn enterprise data into business value.", "service-data.html"],
+          ["Cloud & Platform Engineering", "Modernize technology foundations for cloud, AI and enterprise scale.", "service-cloud.html"],
+          ["Quality Engineering", "Deliver quality across the software lifecycle — from traditional applications to AI-powered products.", "service-quality.html"],
+          ["Cybersecurity", "Protect applications, infrastructure, identities and data across modern enterprise environments.", "service-security.html"],
+          ["Insurance & Guidewire", "Combine deep P&C insurance expertise with Guidewire, modern engineering and AI.", "guidewire.html"]
         ]
+      },
+      */
+      {
+        label: "Digital Engineering",
+        title: "Build. Modernize. Scale.",
+        body: "We help enterprises build, modernize, and scale digital products, applications and platforms through modern engineering practices, cloud technologies and AI-enabled development.",
+        bullets: [
+          "Product Engineering",
+          "Application Development & Modernization",
+          "Enterprise Architecture",
+          "AI-Assisted Software Engineering",
+          "API & Integration",
+          "DevOps & Platform Engineering",
+          "Application Support & Maintenance"
+        ],
+        aiNote: "We apply AI across the development lifecycle — from code generation, refactoring, and modernization to testing, developer productivity, and intelligent automation — helping engineering teams accelerate delivery, improve quality, and focus on higher-value work.",
+        link: ["service-digital-engineering.html","Explore Digital Engineering"]
+      },
+      {
+        label: "Data & AI",
+        title: "Turn Data Into Intelligence.",
+        body: "Enterprise AI starts with trusted, accessible, and well-engineered data. We help organizations build the data foundations, modern platforms, and intelligent solutions needed to turn data into actionable insights and scale AI across the enterprise.",
+        bullets: [
+          "Data Engineering",
+          "Modern Data Platforms",
+          "Data Modernization",
+          "Data Governance",
+          "Analytics & Business Intelligence",
+          "AI/ML Engineering",
+          "Generative AI",
+          "Enterprise AI Solutions",
+          "AI-Ready Data Foundations"
+        ],
+        aiNote: "We help enterprises move from data to insight to intelligent action — integrating AI across analytics, applications, and business workflows to unlock greater productivity, smarter decisions, and measurable business value.",
+        link: ["service-data.html","Explore Data & AI"]
+      },
+      {
+        label: "Cloud & Platform Engineering",
+        title: "Build the Foundation for What’s Next.",
+        body: "We help enterprises modernize their technology foundations, accelerate cloud adoption and engineer scalable, secure platforms for digital and AI workloads.",
+        bullets: [
+          "Cloud Strategy & Assessment",
+          "Cloud Migration & Modernization",
+          "Cloud-Native Development",
+          "Platform Engineering",
+          "DevSecOps",
+          "AI Infrastructure",
+          "Cloud Operations & Managed Services"
+        ],
+        aiNote: "We help organizations design and engineer cloud environments that are scalable, secure, resilient, and AI-ready — supporting modern applications, data platforms, and AI workloads at enterprise scale.",
+        link: ["service-cloud.html","Explore Cloud & Platform Engineering"]
+      },
+      {
+        label: "Quality Engineering",
+        title: "Quality for the AI Era.",
+        body: "Traditional testing alone is no longer enough. AI-powered applications introduce new dimensions of quality — including accuracy, reliability, robustness, safety, performance, and the quality of intelligent outcomes. Technumen combines deep quality engineering expertise with AI-enabled testing and evaluation to help enterprises build reliable software, resilient platforms, and intelligent digital experiences they can trust.",
+        bullets: [
+          "AI Quality Engineering",
+          "AI Application Testing",
+          "AI/ML Model Evaluation",
+          "Human Evaluation",
+          "Generative AI Testing",
+          "Intelligent Test Automation",
+          "Functional & Performance Testing",
+          "Test Data Engineering",
+          "Continuous Quality Engineering"
+        ],
+        aiNote: "We apply AI across the quality lifecycle to accelerate test creation and execution, expand coverage, improve automation, and evaluate the behavior, accuracy, consistency, and reliability of AI-powered systems.",
+        link: ["service-quality.html","Explore Quality Engineering"]
+      },
+      {
+        label: "Cybersecurity",
+        title: "Secure the Modern Enterprise.",
+        body: "As enterprises adopt cloud, modern applications, data platforms, and AI, the security landscape continues to evolve. Technumen helps organizations protect applications, infrastructure, identities, and data across increasingly complex digital environments.",
+        bullets: [
+          "Cloud Security",
+          "Application & Product Security",
+          "Identity & Access Management",
+          "Security Operations",
+          "Governance, Risk & Compliance",
+          "Security Testing",
+          "AI Security"
+        ],
+        aiNote: "We help enterprises address emerging AI security challenges while applying intelligent technologies to improve threat detection, security analysis, risk assessment, and response.",
+        link: ["service-security.html","Explore Cybersecurity"]
+      },
+      {
+        label: "Insurance & Guidewire",
+        title: "Deep Insurance Expertise. Modern Engineering.",
+        body: "Technumen combines deep P&C insurance expertise, Guidewire capabilities, and modern engineering to help insurers transform their technology landscape, modernize core platforms, and deliver better digital experiences.",
+        bullets: [
+          "Guidewire Implementation",
+          "Guidewire Modernization",
+          "P&C Insurance Solutions",
+          "Digital Customer Experience",
+          "Insurance Product Engineering",
+          "Data & Analytics",
+          "Quality Engineering",
+          "AI for Insurance"
+        ],
+        aiNote: "We help insurers explore and apply AI across underwriting, claims, customer experience, operations, and technology — while modernizing the platforms and data foundations needed to scale these capabilities.",
+        link: ["guidewire.html","Explore Insurance & Guidewire"]
+      },
+      {
+        label: "AI Across Technumen",
+        title: "AI Isn’t a Separate Service. It’s How We Engineer.",
+        cards: [
+          ["Build Faster","Accelerate software development, modernization, testing, and engineering productivity."],
+          ["Work Smarter With Data","Transform enterprise data into insights, predictions, and intelligent decisions."],
+          ["Engineer Better Quality","Use AI-powered testing and evaluation to improve the reliability, accuracy, and performance of traditional and AI-powered applications."],
+          ["Modernize With Intelligence","Apply AI to understand, analyze, transform, and continuously improve complex technology environments."],
+          ["Automate Intelligently","Use AI to streamline repetitive processes and optimize enterprise workflows where it delivers measurable value."]
+        ]
+      },
+      {
+        label: "Why Technumen",
+        title: "The Technumen Difference",
+        cards: [
+          ["Enterprise Experience","More than a decade of experience solving complex technology challenges."],
+          ["Engineering Depth","Multidisciplinary expertise spanning digital engineering, data, AI, cloud, quality, cybersecurity, and industry solutions."],
+          ["AI-Ready by Design","AI is embedded across capabilities and practices, helping clients accelerate delivery and unlock new possibilities."],
+          ["Domain Expertise","Deep knowledge where business processes and operational complexity intersect."],
+          ["Long-Term Partnerships","Working alongside clients as an extension of their teams to build, modernize, and evolve technology for the long term."]
+        ]
+      },
+      {
+        label: "How We Deliver",
+        title: "Engineering That Delivers",
+        body: "We combine technical depth with accountability and disciplined execution to turn complex technology challenges into practical, measurable outcomes."
       }
     ],
-    cta: ["Let's find the right solution", "Explore how our services can transform your business operations.", "Contact Us"]
+    cta: ["Ready to Build What's Next?", "Let's talk about your next technology challenge.", "Talk to Technumen"]
   },
   "service-digital-engineering.html": {
-    eyebrow: "Digital Applications",
-    title: "Software Built to Outlast the Trend Cycle",
-    intro: "We design and build the applications your business runs on — modernized, automated, and engineered to scale, not just to launch.",
+    eyebrow: "Digital Engineering",
+    title: "Build. Modernize. Scale.",
+    intro: "We help enterprises build, modernize, and scale digital products, applications and platforms through modern engineering practices, cloud technologies and AI-enabled development.",
     sections: [
       {
         label: "Overview",
@@ -77,14 +254,16 @@ const pages = {
       {
         label: "Key Offerings",
         title: "Our Capabilities",
-        cards: [
-          ["Application Dev & Maintenance", "Full-lifecycle support for software products, from design and build to deployment and maintenance."],
-          ["Application Modernization", "Migrate older systems to modern platforms to reduce risk, lower operating costs, and improve customer experience."],
-          ["Enterprise Architecture", "Build scalable enterprise platforms with optimized architecture and cost-aware delivery."],
-          ["DevOps", "Automated CI/CD pipelines, infrastructure as code, and continuous delivery practices that accelerate release cycles while maintaining quality and security."],
-          ["Agile", "Accelerate product development with agile methods, modern tools, and iterative delivery."],
-          ["Testing", "Ensure application security, scalability, and quality across the full lifecycle."]
-        ]
+        bullets: [
+          "Product Engineering",
+          "Application Development & Modernization",
+          "Enterprise Architecture",
+          "AI-Assisted Software Engineering",
+          "API & Integration",
+          "DevOps & Platform Engineering",
+          "Application Support & Maintenance"
+        ],
+        aiNote: "We apply AI across the development lifecycle — from code generation, refactoring, and modernization to testing, developer productivity, and intelligent automation — helping engineering teams accelerate delivery, improve quality, and focus on higher-value work."
       },
       {
         label: "What We Deliver",
@@ -106,9 +285,9 @@ const pages = {
     cta: ["Ready to modernize your applications?", "Let our digital engineering team assess your portfolio and build a transformation roadmap.", "Contact Us"]
   },
   "service-cloud.html": {
-    eyebrow: "Cloud Transformation",
-    title: "Cloud Transformation",
-    intro: "Accelerate your digital journey with scalable, secure, and cost-optimized cloud solutions across AWS, Azure, and GCP.",
+    eyebrow: "Cloud & Platform Engineering",
+    title: "Build the Foundation for What’s Next.",
+    intro: "We help enterprises modernize their technology foundations, accelerate cloud adoption and engineer scalable, secure platforms for digital and AI workloads.",
     sections: [
       {
         label: "Cloud Modernization",
@@ -118,15 +297,16 @@ const pages = {
       {
         label: "Key Offerings",
         title: "Cloud Capabilities",
-        cards: [
-          ["Cloud Strategy & Advisory", "Assess the current landscape, recommend the right cloud model, and create a phased migration plan."],
-          ["Cloud Migration", "Move workloads with minimal disruption using lift-and-shift, re-platforming, and re-architecting approaches."],
-          ["Cloud Modernization", "Transform legacy applications into cloud-native microservices using containers, Kubernetes, serverless, and APIs."],
-          ["Cloud Infrastructure & DevOps", "Build scalable infrastructure with IaC, CI/CD pipelines, and automated provisioning, cost, security, and compliance with continuous support."],
-          ["Cloud-Native Development", "Build scalable applications using microservices, containers, and serverless technologies."],
-          ["Hybrid Cloud", "Integrate on-premises and cloud environments for flexible, phased, or sovereignty-sensitive workloads."],
-          ["Cost Optimization", "Reduce cloud spend with right-sizing, reserved instances, and FinOps practices."]
-        ]
+        bullets: [
+          "Cloud Strategy & Assessment",
+          "Cloud Migration & Modernization",
+          "Cloud-Native Development",
+          "Platform Engineering",
+          "DevSecOps",
+          "AI Infrastructure",
+          "Cloud Operations & Managed Services"
+        ],
+        aiNote: "We help organizations design and engineer cloud environments that are scalable, secure, resilient, and AI-ready — supporting modern applications, data platforms, and AI workloads at enterprise scale."
       },
       {
         label: "Run & Migrate",
@@ -140,9 +320,9 @@ const pages = {
     cta: ["Ready for cloud transformation?", "Modernize your infrastructure and accelerate your digital journey.", "Contact Us"]
   },
   "service-data.html": {
-    eyebrow: "Advanced Analytics",
-    title: "Transforming Data into Actionable Business Intelligence",
-    intro: "We establish the foundation necessary for organizations to scale and make strategic AI decisions, from data architecture to governance and analytics.",
+    eyebrow: "Data & AI",
+    title: "Turn Data Into Intelligence.",
+    intro: "Enterprise AI starts with trusted, accessible, and well-engineered data. We help organizations build the data foundations, modern platforms, and intelligent solutions needed to turn data into actionable insights and scale AI across the enterprise.",
     sections: [
       {
         label: "Strategy & Consulting",
@@ -153,11 +333,18 @@ const pages = {
         label: "Data Intelligence",
         title: "Data Intelligence Capabilities",
         body: "We build unified intelligence pipelines, identify critical data elements, and implement governance frameworks for AI-ready organizations.",
-        cards: [
-          ["Data Platform & Architecture", "Design data lakes, lakehouses, real-time streaming architectures, and unified intelligence pipelines."],
-          ["Critical Data Elements Identification", "Map your data landscape, identify high-value assets, and establish lineage and quality metrics."],
-          ["Data Management Governance", "Implement catalogs, access controls, retention policies, and regulatory compliance programs."]
-        ]
+        bullets: [
+          "Data Engineering",
+          "Modern Data Platforms",
+          "Data Modernization",
+          "Data Governance",
+          "Analytics & Business Intelligence",
+          "AI/ML Engineering",
+          "Generative AI",
+          "Enterprise AI Solutions",
+          "AI-Ready Data Foundations"
+        ],
+        aiNote: "We help enterprises move from data to insight to intelligent action — integrating AI across analytics, applications, and business workflows to unlock greater productivity, smarter decisions, and measurable business value."
       },
       {
         label: "Industry Focus",
@@ -173,8 +360,8 @@ const pages = {
   },
   "service-quality.html": {
     eyebrow: "Quality Engineering",
-    title: "Quality Engineering",
-    intro: "We deliver impactful and immaculate Software Quality Automation and Testing services.",
+    title: "Quality for the AI Era.",
+    intro: "Traditional testing alone is no longer enough. AI-powered applications introduce new dimensions of quality — including accuracy, reliability, robustness, safety, performance, and the quality of intelligent outcomes. Technumen combines deep quality engineering expertise with AI-enabled testing and evaluation to help enterprises build reliable software, resilient platforms, and intelligent digital experiences they can trust.",
     sections: [
       {
         label: "QE Services",
@@ -184,35 +371,40 @@ const pages = {
       {
         label: "Key Offerings",
         title: "QE Capabilities",
-        cards: [
-          ["AI for Quality Engineering", "Use AI to trace critical data and add practical value to quality programs."],
-          ["Intelligent Test Automation", "Smarter software and application testing with reduced errors and better maintainability."],
-          ["BIDW Test Automation", "Secure data foundations and cloud architecture for data warehousing and validation."],
-          ["Test Data Management", "Manage accurate test data across cloud migrations, hybrid, and multi-cloud environments."],
-          ["Intelligent Test Design Automation", "Reliable test design automation to scale operations and adapt to testing needs."],
-          ["Digital QE Services", "Shift to comprehensive QE aligned to the digital future."],
-          ["Continuous Testing", "Match CI/CD needs with omnichannel testing, digital assurance, and crowd testing."],
-          ["Cost Reduction", "Reduce costs with autonomous testing, full-cycle QE, automation, and validation services."]
-        ]
+        bullets: [
+          "AI Quality Engineering",
+          "AI Application Testing",
+          "AI/ML Model Evaluation",
+          "Human Evaluation",
+          "Generative AI Testing",
+          "Intelligent Test Automation",
+          "Functional & Performance Testing",
+          "Test Data Engineering",
+          "Continuous Quality Engineering"
+        ],
+        aiNote: "We apply AI across the quality lifecycle to accelerate test creation and execution, expand coverage, improve automation, and evaluate the behavior, accuracy, consistency, and reliability of AI-powered systems."
       }
     ],
     cta: ["Ready for quality engineering?", "Shift your QE strategy with AI-powered testing and automation.", "Contact Us"]
   },
   "service-security.html": {
-    eyebrow: "Cyber Security",
-    title: "Security Built for Industries Where Failure Isn't an Option",
-    intro: "Insurance and financial services don't get to treat security as an afterthought — a breach is a regulatory event, not just downtime. We build end-to-end protection designed around that reality.",
+    eyebrow: "Cybersecurity",
+    title: "Secure the Modern Enterprise.",
+    intro: "As enterprises adopt cloud, modern applications, data platforms, and AI, the security landscape continues to evolve. Technumen helps organizations protect applications, infrastructure, identities, and data across increasingly complex digital environments.",
     sections: [
       {
         label: "Key Offerings",
         title: "Security Capabilities",
-        cards: [
-          ["Cloud Security Services", "Cloud security architecture, configuration audits, workload protection, and continuous monitoring."],
-          ["Product Security Services", "Secure SDLC consulting, SAST, DAST, SCA, threat modeling, and DevSecOps integration."],
-          ["GRC Services", "Risk assessments, compliance audits, policy development, and security awareness training."],
-          ["IAM Services", "SSO, MFA, privileged access management, identity governance, and zero-trust access controls."],
-          ["MDR Services", "24/7 threat monitoring, incident response, and threat hunting with SOC and SIEM capabilities."]
-        ]
+        bullets: [
+          "Cloud Security",
+          "Application & Product Security",
+          "Identity & Access Management",
+          "Security Operations",
+          "Governance, Risk & Compliance",
+          "Security Testing",
+          "AI Security"
+        ],
+        aiNote: "We help enterprises address emerging AI security challenges while applying intelligent technologies to improve threat detection, security analysis, risk assessment, and response."
       },
       {
         label: "Industry Focus",
@@ -246,18 +438,24 @@ const pages = {
     cta: ["Strengthen your security posture", "Partner with Technumen for enterprise-grade cybersecurity solutions.", "Contact Us"]
   },
   "guidewire.html": {
-    eyebrow: "Guidewire & Insurance",
-    title: "Intelligent Core Transformation for Property & Casualty",
-    intro: "We deliver end-to-end Guidewire development and maintenance projects designed to reduce operational expenditure and drive business profitability.",
+    eyebrow: "Insurance & Guidewire",
+    title: "Deep Insurance Expertise. Modern Engineering.",
+    intro: "Technumen combines deep P&C insurance expertise, Guidewire capabilities, and modern engineering to help insurers transform their technology landscape, modernize core platforms, and deliver better digital experiences.",
     sections: [
       {
         label: "Insurance Solutions",
         title: "Comprehensive Insurance Solutions",
-        cards: [
-          ["Guidewire-led Core Transformation", "Modernize legacy systems with Guidewire-led core transformation and managed services."],
-          ["Digital Customer Experience", "Deliver seamless digital experiences using our Digital Insurance Accelerator."],
-          ["New Product Development", "Develop insurance products across coverage, channel, pricing, compliance, and customer experience."]
-        ]
+        bullets: [
+          "Guidewire Implementation",
+          "Guidewire Modernization",
+          "P&C Insurance Solutions",
+          "Digital Customer Experience",
+          "Insurance Product Engineering",
+          "Data & Analytics",
+          "Quality Engineering",
+          "AI for Insurance"
+        ],
+        aiNote: "We help insurers explore and apply AI across underwriting, claims, customer experience, operations, and technology — while modernizing the platforms and data foundations needed to scale these capabilities."
       },
       {
         label: "Guidewire Expertise",
@@ -328,6 +526,7 @@ const pages = {
       {
         label: "Open Roles",
         title: "Featured Open Positions",
+        body: "Send your application to jobs@technumen.com or careers@technumen.com, quoting the Job ID in the subject line. Each role below expands for the full description.",
         jobs: [
           {
             "anchor": "lm-off26-n110",
@@ -590,7 +789,7 @@ const pages = {
         ]
       }
     ],
-    cta: ["Ready to Shape the Future?", "Send your resume to jobs@technumen.com and join our global network of exceptional consultants.", "Send Resume"]
+    cta: ["Ready to Shape the Future?", "Send your resume to jobs@technumen.com or careers@technumen.com with the Job ID in the subject line.", "Send Resume"]
   },
   "resources.html": {
     eyebrow: "Resources",
@@ -718,12 +917,12 @@ const pages = {
 };
 
 const services = [
-  ["Digital Applications", "service-digital-engineering.html"],
-  ["Cloud Transformation", "service-cloud.html"],
-  ["Advanced Analytics", "service-data.html"],
+  ["Digital Engineering", "service-digital-engineering.html"],
+  ["Data & AI", "service-data.html"],
+  ["Cloud & Platform Engineering", "service-cloud.html"],
   ["Quality Engineering", "service-quality.html"],
-  ["Cyber Security", "service-security.html"],
-  ["Guidewire / Insurance", "guidewire.html"]
+  ["Cybersecurity", "service-security.html"],
+  ["Insurance & Guidewire", "guidewire.html"]
 ];
 
 const pageName = location.pathname.split("/").pop() || "about.html";
@@ -901,6 +1100,34 @@ const jobsMarkup = (jobs = []) => jobs.length ? `
   </div>
 ` : "";
 
+const initials = (name) => name.split(/\s+/).filter(Boolean).slice(0, 2).map(w => w[0]).join("").toUpperCase();
+
+const narrativeMarkup = (paras = []) => paras.length
+  ? paras.map(t => `<p class="section-body section-body--stacked">${linkify(t)}</p>`).join("")
+  : "";
+
+const aiNoteMarkup = (note) => note ? `
+  <p class="ai-note"><span class="ai-note-label">AI-Enabled Approach</span>${note}</p>
+` : "";
+
+const sectionLinkMarkup = (link) => link ? `
+  <a class="section-link" href="${link[0]}">${link[1]} <span aria-hidden="true">&rarr;</span></a>
+` : "";
+
+const peopleMarkup = (people = []) => people.length ? `
+  <ul class="people-grid">
+    ${people.map(([name, role, photo]) => `
+      <li class="person-card">
+        ${photo
+          ? `<span class="person-avatar"><img src="${photo}" alt="${name}" loading="lazy" /></span>`
+          : `<span class="person-avatar person-avatar--placeholder" aria-hidden="true">${initials(name)}</span>`}
+        <span class="person-name">${name}</span>
+        <span class="person-role">${role}</span>
+      </li>
+    `).join("")}
+  </ul>
+` : "";
+
 const quoteMarkup = (section) => section.quote ? `
   <figure class="page-quote">
     <blockquote>${section.quote}</blockquote>
@@ -925,12 +1152,16 @@ document.querySelector("[data-page-root]").innerHTML = `
           <p class="section-kicker">${section.label}</p>
           <h2 class="section-title">${section.title}</h2>
           ${section.body ? `<p class="section-body">${linkify(section.body)}</p>` : ""}
+          ${narrativeMarkup(section.paras)}
         </div>
         ${quoteMarkup(section)}
         ${statsMarkup(section.stats)}
         ${bulletsMarkup(section.bullets)}
         ${jobsMarkup(section.jobs)}
+        ${peopleMarkup(section.people)}
         ${section.cards ? `<div class="${view.contentGrid}">${cardMarkup(section.cards)}</div>` : ""}
+        ${aiNoteMarkup(section.aiNote)}
+        ${sectionLinkMarkup(section.link)}
       </div>
     </section>
   `).join("")}

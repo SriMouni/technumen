@@ -63,23 +63,23 @@ const renderBody = new Function(
    rather than a truncated intro. Keep descriptions inside ~155 characters. */
 const SEO = {
   "about.html": [
-    "About Technumen | AI-Native IT & Business Consulting Since 2012",
-    "An AI-native IT and business consulting firm founded in 2012. Insights-driven, outcome-based delivery across 3 global centres and 1,500+ technical experts.",
+    "About Technumen | AI-Ready IT & Business Consulting Since 2012",
+    "Since 2012, Technumen has partnered with global enterprises across AI, data, cloud, digital engineering, quality engineering and cybersecurity. Meet our leadership.",
   ],
   "services.html": [
-    "Services | AI, Cloud, Data, Quality & Cyber Security | Technumen",
+    "Technology Services | AI-Ready by Design | Technumen",
     "Six service lines built around one belief: AI should change what's possible. Digital applications, cloud, analytics, quality engineering, security and Guidewire.",
   ],
   "service-digital-engineering.html": [
-    "Digital Applications & Software Engineering | Technumen",
+    "Digital Engineering | Application Development & Modernization | Technumen",
     "Application development, modernization, enterprise architecture, DevOps and agile delivery — software engineered to scale, not just to launch.",
   ],
   "service-cloud.html": [
-    "Cloud Transformation Services | AWS, Azure & GCP | Technumen",
+    "Cloud & Platform Engineering | AWS, Azure & GCP | Technumen",
     "Cloud strategy, migration, modernization and 24/7 SLA-backed operations across AWS, Azure and GCP — including data centre services and VDI.",
   ],
   "service-data.html": [
-    "Advanced Analytics & Data Engineering | Technumen",
+    "Data & AI | Data Engineering, Analytics & AI/ML | Technumen",
     "Data lakes, lakehouses and real-time streaming with governance built in. Turn scattered enterprise data into intelligence your AI models can trust.",
   ],
   "service-quality.html": [
@@ -87,7 +87,7 @@ const SEO = {
     "AI-based testing, intelligent test automation, BIDW test automation and test data management that improve reliability, speed and value.",
   ],
   "service-security.html": [
-    "Enterprise Cyber Security & Compliance Services | Technumen",
+    "Cybersecurity | Enterprise Security & Compliance | Technumen",
     "Cloud security, product security, GRC, IAM and 24/7 managed detection and response — built for industries where a breach is a regulatory event.",
   ],
   "guidewire.html": [
@@ -100,7 +100,7 @@ const SEO = {
   ],
   "careers.html": [
     "Careers at Technumen | IT Consulting Jobs in US, India & Costa Rica",
-    "Current openings: Full Stack Developer (Java 17/21 and React), Senior Guidewire PolicyCenter Developer, and Guidewire QA Lead. Apply to jobs@technumen.com.",
+    "Three live openings: Full Stack Developer (Java 17/21 and React), Sr Guidewire Developer, and Guidewire QA Lead. Apply to jobs@technumen.com with the Job ID.",
   ],
   "resources.html": [
     "Trust Center | CMMI Level 3, SOC 2 Type 2 & ISO 27001 | Technumen",
