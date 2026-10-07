@@ -20,6 +20,7 @@ const pages = {
       {
         label: "Mission and Vision",
         title: "Where we are going, and how we get there",
+        image: ["images/Frame 128.png", "Machine learning pipelines and large language model integrations running at enterprise scale"],
         stats: [["2012", "Established"], ["1,500+", "People"], ["50+", "Customers"], ["3", "Global Delivery Centers"]],
         cards: [
           ["Our Vision", "To be a trusted technology partner helping enterprises shape the future."],

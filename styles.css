@@ -3125,6 +3125,11 @@
 
 .section-has-figure > .section-copy { width: 100%; }
 
+/* cards, stats and the like run full width beneath the copy and artwork */
+.section-has-figure > *:not(.section-copy):not(.section-figure) {
+  grid-column: 1 / -1;
+}
+
 .section-figure {
   position: relative;
   margin: 0;
