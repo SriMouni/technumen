@@ -28,12 +28,12 @@ const pages = {
       {
         label: "Our Story",
         title: "Why We Built Technumen",
-        paras: [
-          "Technumen was founded in 2012 with a simple belief: enterprises need technology partners who understand their business, solve complex problems and take ownership of outcomes.",
-          "We built Technumen around strong engineering, trusted relationships and disciplined delivery. Over the years, we've helped enterprises modernize applications, build data platforms, move to the cloud, engineer digital products and improve the quality, security, and performance of critical technology.",
-          "Today, AI is transforming how technology is built, operated, and delivered. We believe AI should not exist as a standalone service alongside traditional technology capabilities. It should be embedded into the way modern technology is engineered.",
-          "That's why we are making Technumen AI-ready across our services — using AI to help our clients build smarter products, modernize faster, unlock greater value from data, and engineer higher-quality technology.",
-          "Technology will continue to evolve. Our commitment to understanding the right problem, engineering the right solution, and delivering outcomes that work will remain at the heart of Technumen."
+        timeline: [
+          ["2012", "Technumen was founded in 2012 with a simple belief: enterprises need technology partners who understand their business, solve complex problems and take ownership of outcomes."],
+          ["Since then", "We built Technumen around strong engineering, trusted relationships and disciplined delivery. Over the years, we've helped enterprises modernize applications, build data platforms, move to the cloud, engineer digital products and improve the quality, security, and performance of critical technology."],
+          ["Today", "AI is transforming how technology is built, operated, and delivered. We believe AI should not exist as a standalone service alongside traditional technology capabilities. It should be embedded into the way modern technology is engineered."],
+          ["What we’re building", "That's why we are making Technumen AI-ready across our services — using AI to help our clients build smarter products, modernize faster, unlock greater value from data, and engineer higher-quality technology."],
+          ["What stays constant", "Technology will continue to evolve. Our commitment to understanding the right problem, engineering the right solution, and delivering outcomes that work will remain at the heart of Technumen."]
         ]
       },
       {
@@ -71,7 +71,8 @@ const pages = {
           ["Jayaprada Ravula", "HR Business Partner – USA"],
           ["Swetha Komatwar", "Account Manager"],
           ["Sindhura Mettu", "Sr Program Manager"],
-          ["Chandana Namburi", "Sr Program Manager"]
+          ["Saritha Chintala", "HR Business Partner \u2013 India"],
+          ["Chandana Namburi", "Sr Program Lead"]
         ]
       },
       {
@@ -1102,8 +1103,30 @@ const jobsMarkup = (jobs = []) => jobs.length ? `
 
 const initials = (name) => name.split(/\s+/).filter(Boolean).slice(0, 2).map(w => w[0]).join("").toUpperCase();
 
+/* The heading block fills the container instead of stopping at 767px:
+   split into two columns when something follows it, full width with the
+   narrative flowing in columns when it is the whole section. */
+const timelineMarkup = (steps = []) => steps.length ? `
+  <ol class="timeline">
+    ${steps.map(([phase, text], i) => `
+      <li class="timeline-step" style="--motion-order:${i}">
+        <span class="timeline-node" aria-hidden="true"></span>
+        <p class="timeline-phase">${phase}</p>
+        <p class="timeline-text">${linkify(text)}</p>
+      </li>
+    `).join("")}
+  </ol>
+` : "";
+
+const copyClass = (section) => {
+  const hasMore = section.cards || section.bullets || section.people || section.stats || section.quote || section.timeline;
+  // a lone closing sentence reads better centred; everything else stacks
+  if (section.body && !section.paras && !hasMore) return "section-copy section-copy--center";
+  return "section-copy";
+};
+
 const narrativeMarkup = (paras = []) => paras.length
-  ? paras.map(t => `<p class="section-body section-body--stacked">${linkify(t)}</p>`).join("")
+  ? `<div class="section-narrative">${paras.map(t => `<p class="section-body section-body--stacked">${linkify(t)}</p>`).join("")}</div>`
   : "";
 
 const aiNoteMarkup = (note) => note ? `
@@ -1148,12 +1171,13 @@ document.querySelector("[data-page-root]").innerHTML = `
   ${page.sections.map((section, sectionIndex) => `
     <section class="${view.contentSection} ${motionTheme ? "content-section--motion" : ""}" style="--section-order:${sectionIndex}">
       <div class="${view.pageContainer}">
-        <div class="section-copy">
+        <div class="${copyClass(section)}">
           <p class="section-kicker">${section.label}</p>
           <h2 class="section-title">${section.title}</h2>
           ${section.body ? `<p class="section-body">${linkify(section.body)}</p>` : ""}
           ${narrativeMarkup(section.paras)}
         </div>
+        ${timelineMarkup(section.timeline)}
         ${quoteMarkup(section)}
         ${statsMarkup(section.stats)}
         ${bulletsMarkup(section.bullets)}
