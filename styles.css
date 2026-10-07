@@ -3226,7 +3226,6 @@
    grid needs just leaves dead space under the text. Unlayered, so it wins
    over the min-h utility. */
 .content-grid.grid-cols-2 > .content-card {
-  min-height: 0;
   padding: 26px 28px 28px;
 }
 
@@ -3268,12 +3267,6 @@
 
 .content-section .content-grid.grid-cols-1 > .content-card {
   width: 100%;
-}
-
-/* the 220px floor leaves dead space under short card copy; flex still
-   equalises the cards within a row */
-.content-section .content-card {
-  min-height: 0;
 }
 
 .people-grid {
