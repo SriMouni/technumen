@@ -3241,3 +3241,69 @@
   color: transparent;
   width: fit-content;
 }
+
+/*  ============================================================
+     CENTRED CARD / PEOPLE ROWS
+     Grid leaves a short last row against the left edge. Flex wrap
+     with centred justification keeps full rows identical and
+     centres the remainder.
+     ============================================================  */
+
+/* a short last row centres rather than hugging the left */
+.content-section .content-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content-section .content-grid > .content-card {
+  flex: 0 1 auto;
+  width: calc((100% - 40px) / 3);
+}
+
+.content-section .content-grid.grid-cols-2 > .content-card {
+  width: calc((100% - 20px) / 2);
+}
+
+.content-section .content-grid.grid-cols-1 > .content-card {
+  width: 100%;
+}
+
+/* the 220px floor leaves dead space under short card copy; flex still
+   equalises the cards within a row */
+.content-section .content-card {
+  min-height: 0;
+}
+
+.people-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns: none;
+}
+
+.people-grid > .person-card {
+  flex: 0 1 auto;
+  width: calc((100% - 4 * 22px) / 5);
+  min-width: 186px;
+}
+
+@media (max-width: 1180px) {
+  .people-grid > .person-card { width: calc((100% - 3 * 22px) / 4); }
+}
+
+@media (max-width: 960px) {
+  .content-section .content-grid > .content-card { width: calc((100% - 20px) / 2); }
+  .people-grid > .person-card { width: calc((100% - 2 * 22px) / 3); }
+}
+
+@media (max-width: 760px) {
+  .content-section .content-grid > .content-card,
+  .content-section .content-grid.grid-cols-2 > .content-card { width: 100%; }
+  .people-grid > .person-card { width: calc((100% - 14px) / 2); } /* gap drops to 14px here */
+}
+
+@media (max-width: 460px) {
+  .people-grid > .person-card { width: 100%; }
+}
