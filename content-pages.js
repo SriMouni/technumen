@@ -1136,6 +1136,14 @@ const timelineMarkup = (steps = []) => steps.length ? `
   </ol>
 ` : "";
 
+// Card grids size to their contents: two or four cards in a three-up grid
+// leave an obvious hole, so they get their own column count.
+const gridClass = (n) => {
+  if (n === 1) return "content-grid mt-12 grid grid-cols-1 gap-5";
+  if (n === 2 || n === 4) return "content-grid mt-12 grid grid-cols-2 gap-5 max-[760px]:grid-cols-1";
+  return "content-grid mt-12 grid grid-cols-3 gap-5 max-[960px]:grid-cols-2 max-[760px]:grid-cols-1";
+};
+
 const copyClass = (section) => {
   const hasMore = section.cards || section.bullets || section.people || section.stats || section.quote || section.timeline;
   // a lone closing sentence reads better centred; everything else stacks
@@ -1203,7 +1211,7 @@ document.querySelector("[data-page-root]").innerHTML = `
         ${bulletsMarkup(section.bullets)}
         ${jobsMarkup(section.jobs)}
         ${peopleMarkup(section.people)}
-        ${section.cards ? `<div class="${view.contentGrid}">${cardMarkup(section.cards)}</div>` : ""}
+        ${section.cards ? `<div class="${gridClass(section.cards.length)}">${cardMarkup(section.cards)}</div>` : ""}
         ${aiNoteMarkup(section.aiNote)}
         ${sectionLinkMarkup(section.link)}
       </div>

@@ -3221,3 +3221,22 @@
 @media (prefers-reduced-motion: reduce) {
   .section-figure img { animation: none; }
 }
+
+/* A two-up card row carries short copy, so the 220px floor the three-up
+   grid needs just leaves dead space under the text. Unlayered, so it wins
+   over the min-h utility. */
+.content-grid.grid-cols-2 > .content-card {
+  min-height: 0;
+  padding: 26px 28px 28px;
+}
+
+/* Highlight two-up card titles (Our Vision / Our Mission) in the accent
+   gradient, the same ink the kickers and stat numbers use. */
+.content-grid.grid-cols-2 > .content-card .card-title {
+  background: linear-gradient(91.15deg, #28EAF3 0%, #BCFFA5 58%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  width: fit-content;
+}
