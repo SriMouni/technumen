@@ -958,7 +958,7 @@ const view = {
   pageButton: "page-button inline-flex min-h-[54px] items-center justify-center rounded-[50px] bg-white px-8 font-['Urbanist',Inter,Arial,sans-serif] text-lg font-semibold text-[#0d0d10] no-underline",
   contentSection: "content-section relative overflow-hidden border-t border-white/10 py-[78px] max-[760px]:py-[54px]",
   contentGrid: "content-grid mt-12 grid grid-cols-3 gap-5 max-[960px]:grid-cols-2 max-[760px]:grid-cols-1",
-  contentCard: "content-card content-card--motion relative min-h-[220px] overflow-hidden rounded-lg border border-[rgba(255,255,255,.12)] bg-[linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015))] p-7",
+  contentCard: "content-card content-card--motion relative min-h-[200px] overflow-hidden rounded-lg border border-[rgba(255,255,255,.12)] bg-[linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.015))] p-7",
   contentTitle: "card-title",
   contentBody: "card-body",
   contentLink: "content-link mt-[18px] inline-flex text-sm font-semibold text-[#bcffa5] no-underline",
