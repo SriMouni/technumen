@@ -11,6 +11,7 @@ const pages = {
       {
         label: "About Us",
         title: "Technology consulting built on integrity and innovation",
+        image: ["images/Frame 126.png", "How Technumen builds, tests, deploys and operates enterprise technology"],
         paras: [
           "We combine deep engineering expertise with capabilities across AI, data, cloud, digital engineering and quality engineering. Our teams help enterprises modernize technology, build and scale digital products, accelerate AI adoption, and enhance the quality, reliability, and performance of mission-critical platforms.",
           "We operate as a long-term technology partner, combining domain expertise, engineering excellence, accountability and delivery discipline to help enterprises transform and deliver at scale."
@@ -113,6 +114,7 @@ const pages = {
       */
       {
         label: "Digital Engineering",
+        num: "01",
         title: "Build. Modernize. Scale.",
         body: "We help enterprises build, modernize, and scale digital products, applications and platforms through modern engineering practices, cloud technologies and AI-enabled development.",
         bullets: [
@@ -129,6 +131,7 @@ const pages = {
       },
       {
         label: "Data & AI",
+        num: "02",
         title: "Turn Data Into Intelligence.",
         body: "Enterprise AI starts with trusted, accessible, and well-engineered data. We help organizations build the data foundations, modern platforms, and intelligent solutions needed to turn data into actionable insights and scale AI across the enterprise.",
         bullets: [
@@ -147,6 +150,7 @@ const pages = {
       },
       {
         label: "Cloud & Platform Engineering",
+        num: "03",
         title: "Build the Foundation for What’s Next.",
         body: "We help enterprises modernize their technology foundations, accelerate cloud adoption and engineer scalable, secure platforms for digital and AI workloads.",
         bullets: [
@@ -163,6 +167,7 @@ const pages = {
       },
       {
         label: "Quality Engineering",
+        num: "04",
         title: "Quality for the AI Era.",
         body: "Traditional testing alone is no longer enough. AI-powered applications introduce new dimensions of quality — including accuracy, reliability, robustness, safety, performance, and the quality of intelligent outcomes. Technumen combines deep quality engineering expertise with AI-enabled testing and evaluation to help enterprises build reliable software, resilient platforms, and intelligent digital experiences they can trust.",
         bullets: [
@@ -181,6 +186,7 @@ const pages = {
       },
       {
         label: "Cybersecurity",
+        num: "05",
         title: "Secure the Modern Enterprise.",
         body: "As enterprises adopt cloud, modern applications, data platforms, and AI, the security landscape continues to evolve. Technumen helps organizations protect applications, infrastructure, identities, and data across increasingly complex digital environments.",
         bullets: [
@@ -197,6 +203,7 @@ const pages = {
       },
       {
         label: "Insurance & Guidewire",
+        num: "06",
         title: "Deep Insurance Expertise. Modern Engineering.",
         body: "Technumen combines deep P&C insurance expertise, Guidewire capabilities, and modern engineering to help insurers transform their technology landscape, modernize core platforms, and deliver better digital experiences.",
         bullets: [
@@ -1067,11 +1074,14 @@ const statsMarkup = (stats = []) => stats.length ? `
   </div>
 ` : "";
 
-const bulletsMarkup = (bullets = []) => bullets.length ? `
-  <ul class="page-bullets">
-    ${bullets.map(item => `<li>${item}</li>`).join("")}
-  </ul>
-` : "";
+// A list of short capability names reads better as chips than as bullets;
+// long-form bullets keep the original marker list.
+const bulletsMarkup = (bullets = []) => {
+  if (!bullets.length) return "";
+  const short = bullets.every(b => String(b).length <= 46);
+  return `<ul class="page-bullets${short ? " page-bullets--chips" : ""}">` +
+    bullets.map(b => `<li>${linkify(String(b))}</li>`).join("") + `</ul>`;
+};
 
 const jobsMarkup = (jobs = []) => jobs.length ? `
   <div class="job-list">
@@ -1106,6 +1116,13 @@ const initials = (name) => name.split(/\s+/).filter(Boolean).slice(0, 2).map(w =
 /* The heading block fills the container instead of stopping at 767px:
    split into two columns when something follows it, full width with the
    narrative flowing in columns when it is the whole section. */
+const figureMarkup = (image) => image ? `
+  <figure class="section-figure">
+    <span class="section-figure-glow" aria-hidden="true"></span>
+    <img src="${image[0]}" alt="${image[1] || ""}" loading="lazy" />
+  </figure>
+` : "";
+
 const timelineMarkup = (steps = []) => steps.length ? `
   <ol class="timeline">
     ${steps.map(([phase, text], i) => `
@@ -1170,13 +1187,15 @@ document.querySelector("[data-page-root]").innerHTML = `
   </section>
   ${page.sections.map((section, sectionIndex) => `
     <section class="${view.contentSection} ${motionTheme ? "content-section--motion" : ""}" style="--section-order:${sectionIndex}">
-      <div class="${view.pageContainer}">
+      <div class="${view.pageContainer}${section.image ? " section-has-figure" : ""}">
         <div class="${copyClass(section)}">
+          ${section.num ? `<span class="section-num" aria-hidden="true">${section.num}</span>` : ""}
           <p class="section-kicker">${section.label}</p>
           <h2 class="section-title">${section.title}</h2>
           ${section.body ? `<p class="section-body">${linkify(section.body)}</p>` : ""}
           ${narrativeMarkup(section.paras)}
         </div>
+        ${figureMarkup(section.image)}
         ${timelineMarkup(section.timeline)}
         ${quoteMarkup(section)}
         ${statsMarkup(section.stats)}

@@ -3111,3 +3111,108 @@
 @media (prefers-reduced-motion: reduce) {
   .timeline-step { animation: none; }
 }
+
+/*  ============================================================
+     SECTION FIGURE  —  artwork beside the copy
+     ============================================================  */
+
+.section-has-figure {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 430px);
+  column-gap: 72px;
+  align-items: center;
+}
+
+.section-has-figure > .section-copy { width: 100%; }
+
+.section-figure {
+  position: relative;
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+
+.section-figure img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  max-width: 430px;
+  animation: digital-window-float 9s ease-in-out infinite;
+}
+
+/* soft halo so the artwork sits in the page rather than on it */
+.section-figure-glow {
+  position: absolute;
+  inset: 6% 2%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, rgba(40, 234, 243, 0.2), transparent 64%);
+  filter: blur(34px);
+}
+
+/*  ============================================================
+     DISCIPLINE NUMERAL + CAPABILITY CHIPS
+     ============================================================  */
+
+.content-section { --num-inset: 0px; }
+
+.section-num {
+  position: absolute;
+  top: 46px;
+  right: 4%;
+  z-index: 0;
+  font-family: "Urbanist", Inter, Arial, sans-serif;
+  font-size: clamp(90px, 11vw, 186px);
+  font-weight: 700;
+  line-height: 0.82;
+  letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(40, 234, 243, 0.17);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* short capability names as chips: they wrap to fill the row */
+.page-bullets--chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+  grid-template-columns: none;
+}
+
+.page-bullets--chips li {
+  padding: 9px 17px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.035);
+  color: #d7ddd9;
+  font-size: 14.5px;
+  line-height: 1.2;
+  transition: border-color 0.22s ease, background 0.22s ease, color 0.22s ease;
+}
+
+.page-bullets--chips li::before { content: none; }
+
+.page-bullets--chips li:hover {
+  border-color: rgba(188, 255, 165, 0.42);
+  background: rgba(188, 255, 165, 0.07);
+  color: #fff;
+}
+
+@media (max-width: 1023px) {
+  .section-has-figure {
+    grid-template-columns: 1fr;
+    row-gap: 38px;
+  }
+  .section-figure { order: 2; }
+  .section-figure img { max-width: 340px; }
+  .section-num { font-size: clamp(74px, 15vw, 120px); top: 34px; }
+}
+
+@media (max-width: 640px) {
+  .section-num { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-figure img { animation: none; }
+}
