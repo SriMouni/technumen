@@ -3230,9 +3230,10 @@
   padding: 26px 28px 28px;
 }
 
-/* Highlight two-up card titles (Our Vision / Our Mission) in the accent
-   gradient, the same ink the kickers and stat numbers use. */
-.content-grid.grid-cols-2 > .content-card .card-title {
+/* Card titles on the inner pages take the accent gradient, the same ink
+   the kickers and stat numbers use. Scoped to .content-section so the
+   home page, which does not use it, keeps its own treatment. */
+.content-section .card-title {
   background: linear-gradient(91.15deg, #28EAF3 0%, #BCFFA5 58%);
   -webkit-background-clip: text;
   background-clip: text;
